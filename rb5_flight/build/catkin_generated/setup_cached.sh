@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel:$CMAKE_PREFIX_PATH"
 export PWD='/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src:$ROS_PACKAGE_PATH"

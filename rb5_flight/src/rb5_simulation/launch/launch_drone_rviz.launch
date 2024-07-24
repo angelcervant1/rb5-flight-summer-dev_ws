@@ -1,0 +1,15 @@
+<launch>
+
+    <param name="robot_description" command="$(find xacro)/xacro $(find rb5_simulation)/description/drone.urdf.xacro" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+        <param name="publish_frequency" type="double" value="50.0" />
+    </node>
+    
+    <node
+        name="drone_teleop"
+        pkg="rb5_simulation"
+        type="drone_teleop.py"
+    />
+
+</launch>

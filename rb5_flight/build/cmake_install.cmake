@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/cmake_install.cmake")
+  include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/cmake_install.cmake")
 
 endif()
 
