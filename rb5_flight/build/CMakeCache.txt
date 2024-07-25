@@ -381,8 +381,20 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
+//Value Computed by CMake
+mocap_optitrack_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mocap_optitrack
+
+//Value Computed by CMake
+mocap_optitrack_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mocap_optitrack
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//Value Computed by CMake
+optitrack-vrpn_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn
+
+//Value Computed by CMake
+optitrack-vrpn_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/optitrack-vrpn
 
 //Value Computed by CMake
 rb5_simulation_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation
@@ -407,6 +419,9 @@ rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/melodic/share/roslaunch/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
@@ -551,7 +566,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
