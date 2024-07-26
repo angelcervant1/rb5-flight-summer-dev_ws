@@ -6,6 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("optitrack-vrpn")
-subdirs("mavros")
+subdirs("mavros-interface")
 subdirs("natnet_ros_cpp")
 subdirs("rb5_simulation")

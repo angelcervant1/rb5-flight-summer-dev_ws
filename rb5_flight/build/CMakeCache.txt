@@ -445,10 +445,10 @@ mavros_DIR:PATH=/opt/ros/melodic/share/mavros/cmake
 mavros_msgs_DIR:PATH=/opt/ros/melodic/share/mavros_msgs/cmake
 
 //Value Computed by CMake
-mavros_test_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros
+mavros_test_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface
 
 //Value Computed by CMake
-mavros_test_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros
+mavros_test_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
