@@ -23,7 +23,7 @@
         <arg name="respawn_mavros" default="$(arg respawn_mavros)" />
     </include>
 
-<node name="mavros_test_node" pkg="mavros_test" type="mavros_test_node" output="screen"/>
+<node name="mavros_node" pkg="mavros-interfaces" type="mavros_test_node" output="screen"/>
 
 
 </launch>
