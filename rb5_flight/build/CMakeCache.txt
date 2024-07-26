@@ -438,6 +438,12 @@ lib:FILEPATH=/opt/ros/melodic/lib/libtf.so
 //The directory containing a CMake configuration file for libmavconn.
 libmavconn_DIR:PATH=/opt/ros/melodic/share/libmavconn/cmake
 
+//Value Computed by CMake
+mavros-interfaces_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface
+
+//Value Computed by CMake
+mavros-interfaces_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface
+
 //The directory containing a CMake configuration file for mavros.
 mavros_DIR:PATH=/opt/ros/melodic/share/mavros/cmake
 

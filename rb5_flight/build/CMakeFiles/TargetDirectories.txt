@@ -48,8 +48,8 @@
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/CMakeFiles/install/local.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/CMakeFiles/test.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/list_install_components.dir
+/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/mavros-interfaces_node.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/mavros_test_node.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir

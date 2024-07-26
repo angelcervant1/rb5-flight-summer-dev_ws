@@ -590,13 +590,13 @@ clean: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Directory level rules for directory mavros-interface
 
 # Convenience name for "all" pass in the directory.
-mavros-interface/all: mavros-interface/CMakeFiles/mavros_test_node.dir/all
+mavros-interface/all: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all
 
 .PHONY : mavros-interface/all
 
 # Convenience name for "clean" pass in the directory.
+mavros-interface/clean: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean
 mavros-interface/clean: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
-mavros-interface/clean: mavros-interface/CMakeFiles/mavros_test_node.dir/clean
 mavros-interface/clean: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/clean
 mavros-interface/clean: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/clean
 mavros-interface/clean: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
@@ -670,6 +670,112 @@ mavros-interface/preinstall:
 .PHONY : mavros-interface/preinstall
 
 #=============================================================================
+# Target rules for target mavros-interface/CMakeFiles/mavros-interfaces_node.dir
+
+# All Build rule for target.
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_py.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
+	$(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/depend
+	$(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=14,15 "Built target mavros-interfaces_node"
+.PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all
+
+# Include target in all.
+all: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
+.PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule
+
+# Convenience name for target.
+mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule
+
+.PHONY : mavros-interfaces_node
+
+# clean rule for target.
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean:
+	$(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean
+.PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean
+
+# clean rule for target.
+clean: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -698,112 +804,6 @@ mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target mavros-interface/CMakeFiles/mavros_test_node.dir
-
-# All Build rule for target.
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: optitrack-vrpn/CMakeFiles/std_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geographic_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_py.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_eus.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/all
-mavros-interface/CMakeFiles/mavros_test_node.dir/all: mavros-interface/CMakeFiles/mavros_msgs_generate_messages_py.dir/all
-	$(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/depend
-	$(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=14,15 "Built target mavros_test_node"
-.PHONY : mavros-interface/CMakeFiles/mavros_test_node.dir/all
-
-# Include target in all.
-all: mavros-interface/CMakeFiles/mavros_test_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-mavros-interface/CMakeFiles/mavros_test_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 mavros-interface/CMakeFiles/mavros_test_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
-.PHONY : mavros-interface/CMakeFiles/mavros_test_node.dir/rule
-
-# Convenience name for target.
-mavros_test_node: mavros-interface/CMakeFiles/mavros_test_node.dir/rule
-
-.PHONY : mavros_test_node
-
-# clean rule for target.
-mavros-interface/CMakeFiles/mavros_test_node.dir/clean:
-	$(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/clean
-.PHONY : mavros-interface/CMakeFiles/mavros_test_node.dir/clean
-
-# clean rule for target.
-clean: mavros-interface/CMakeFiles/mavros_test_node.dir/clean
 
 .PHONY : clean
 

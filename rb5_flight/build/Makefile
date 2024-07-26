@@ -350,6 +350,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named mavros-interfaces_node
+
+# Build rule for target.
+mavros-interfaces_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros-interfaces_node
+.PHONY : mavros-interfaces_node
+
+# fast build rule for target.
+mavros-interfaces_node/fast:
+	$(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build
+.PHONY : mavros-interfaces_node/fast
+
+#=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_py
 
 # Build rule for target.
@@ -361,19 +374,6 @@ trajectory_msgs_generate_messages_py: cmake_check_build_system
 trajectory_msgs_generate_messages_py/fast:
 	$(MAKE) -f mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named mavros_test_node
-
-# Build rule for target.
-mavros_test_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_test_node
-.PHONY : mavros_test_node
-
-# fast build rule for target.
-mavros_test_node/fast:
-	$(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/build
-.PHONY : mavros_test_node/fast
 
 #=============================================================================
 # Target rules for targets named trajectory_msgs_generate_messages_nodejs
@@ -1546,8 +1546,8 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... mavros-interfaces_node"
 	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... mavros_test_node"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"

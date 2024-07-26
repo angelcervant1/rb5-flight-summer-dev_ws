@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule
+.PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule
+
+# Convenience name for target.
+mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/rule
+
+.PHONY : mavros-interfaces_node
+
+# fast build rule for target.
+mavros-interfaces_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build
+.PHONY : mavros-interfaces_node/fast
+
+# Convenience name for target.
 mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 .PHONY : mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
@@ -181,21 +196,6 @@ trajectory_msgs_generate_messages_py: mavros-interface/CMakeFiles/trajectory_msg
 trajectory_msgs_generate_messages_py/fast:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-mavros-interface/CMakeFiles/mavros_test_node.dir/rule:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 mavros-interface/CMakeFiles/mavros_test_node.dir/rule
-.PHONY : mavros-interface/CMakeFiles/mavros_test_node.dir/rule
-
-# Convenience name for target.
-mavros_test_node: mavros-interface/CMakeFiles/mavros_test_node.dir/rule
-
-.PHONY : mavros_test_node
-
-# fast build rule for target.
-mavros_test_node/fast:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/build
-.PHONY : mavros_test_node/fast
 
 # Convenience name for target.
 mavros-interface/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
@@ -1163,7 +1163,7 @@ src/mavros_test_node.o: src/mavros_test_node.cpp.o
 
 # target to build an object file
 src/mavros_test_node.cpp.o:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/src/mavros_test_node.cpp.o
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o
 .PHONY : src/mavros_test_node.cpp.o
 
 src/mavros_test_node.i: src/mavros_test_node.cpp.i
@@ -1172,7 +1172,7 @@ src/mavros_test_node.i: src/mavros_test_node.cpp.i
 
 # target to preprocess a source file
 src/mavros_test_node.cpp.i:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/src/mavros_test_node.cpp.i
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.i
 .PHONY : src/mavros_test_node.cpp.i
 
 src/mavros_test_node.s: src/mavros_test_node.cpp.s
@@ -1181,7 +1181,7 @@ src/mavros_test_node.s: src/mavros_test_node.cpp.s
 
 # target to generate assembly for a file
 src/mavros_test_node.cpp.s:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros_test_node.dir/build.make mavros-interface/CMakeFiles/mavros_test_node.dir/src/mavros_test_node.cpp.s
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.s
 .PHONY : src/mavros_test_node.cpp.s
 
 # Help Target
@@ -1191,8 +1191,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... list_install_components"
+	@echo "... mavros-interfaces_node"
 	@echo "... trajectory_msgs_generate_messages_py"
-	@echo "... mavros_test_node"
 	@echo "... trajectory_msgs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
