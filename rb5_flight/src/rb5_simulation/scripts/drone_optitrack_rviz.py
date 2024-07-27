@@ -7,7 +7,7 @@ from tf.broadcaster import TransformBroadcaster
 
 class DroneOptitrackFollower:
     def __init__(self):
-        rospy.init_node('drone_teleop')
+        rospy.init_node('drone_optitrack')
         self.pub = rospy.Publisher('/odom', Odometry, queue_size=10)
         self.sub = rospy.Subscriber('/natnet_ros/RB5_Drone/pose', PoseStamped, self.pose_callback)
         self.odom_broadcaster = TransformBroadcaster()
