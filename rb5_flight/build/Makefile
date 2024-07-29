@@ -1455,6 +1455,19 @@ natnet_ros_cpp_generate_messages_py/fast:
 .PHONY : natnet_ros_cpp_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named teleop_ros_node
+
+# Build rule for target.
+teleop_ros_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 teleop_ros_node
+.PHONY : teleop_ros_node
+
+# fast build rule for target.
+teleop_ros_node/fast:
+	$(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/build
+.PHONY : teleop_ros_node/fast
+
+#=============================================================================
 # Target rules for targets named tf_generate_messages_eus
 
 # Build rule for target.
@@ -1644,6 +1657,7 @@ help:
 	@echo "... natnet_ros_cpp_gennodejs"
 	@echo "... natnet_ros_cpp_geneus"
 	@echo "... natnet_ros_cpp_generate_messages_py"
+	@echo "... teleop_ros_node"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_py"

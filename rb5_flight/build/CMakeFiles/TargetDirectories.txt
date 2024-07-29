@@ -147,10 +147,11 @@
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_geneus.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_py.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/install/strip.dir
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/install.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/list_install_components.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/install/local.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/test.dir
+/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/install.dir
+/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/teleop_ros_node.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/rebuild_cache.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/tf_generate_messages_eus.dir
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/edit_cache.dir

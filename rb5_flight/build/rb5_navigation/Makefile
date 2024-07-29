@@ -68,18 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -112,6 +100,18 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_navigation/CMakeFiles/teleop_ros_node.dir/rule
+.PHONY : rb5_navigation/CMakeFiles/teleop_ros_node.dir/rule
+
+# Convenience name for target.
+teleop_ros_node: rb5_navigation/CMakeFiles/teleop_ros_node.dir/rule
+
+.PHONY : teleop_ros_node
+
+# fast build rule for target.
+teleop_ros_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/build
+.PHONY : teleop_ros_node/fast
 
 # Convenience name for target.
 rb5_navigation/CMakeFiles/tf_generate_messages_eus.dir/rule:
@@ -284,6 +299,33 @@ src/offb_node.cpp.s:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s
 .PHONY : src/offb_node.cpp.s
 
+src/teleop3d.o: src/teleop3d.cpp.o
+
+.PHONY : src/teleop3d.o
+
+# target to build an object file
+src/teleop3d.cpp.o:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o
+.PHONY : src/teleop3d.cpp.o
+
+src/teleop3d.i: src/teleop3d.cpp.i
+
+.PHONY : src/teleop3d.i
+
+# target to preprocess a source file
+src/teleop3d.cpp.i:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.i
+.PHONY : src/teleop3d.cpp.i
+
+src/teleop3d.s: src/teleop3d.cpp.s
+
+.PHONY : src/teleop3d.s
+
+# target to generate assembly for a file
+src/teleop3d.cpp.s:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.s
+.PHONY : src/teleop3d.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -291,10 +333,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... install"
+	@echo "... teleop_ros_node"
 	@echo "... rebuild_cache"
 	@echo "... tf_generate_messages_eus"
 	@echo "... edit_cache"
@@ -306,6 +349,9 @@ help:
 	@echo "... src/offb_node.o"
 	@echo "... src/offb_node.i"
 	@echo "... src/offb_node.s"
+	@echo "... src/teleop3d.o"
+	@echo "... src/teleop3d.i"
+	@echo "... src/teleop3d.s"
 .PHONY : help
 
 
