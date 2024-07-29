@@ -3,7 +3,6 @@
 
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o
  /opt/ros/melodic/include/geometry_msgs/Twist.h
- /opt/ros/melodic/include/geometry_msgs/TwistStamped.h
  /opt/ros/melodic/include/geometry_msgs/Vector3.h
  /opt/ros/melodic/include/ros/advertise_options.h
  /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -61,7 +60,6 @@ rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o
  /opt/ros/melodic/include/ros/wall_timer.h
  /opt/ros/melodic/include/ros/wall_timer_options.h
  /opt/ros/melodic/include/rosconsole/macros_generated.h
- /opt/ros/melodic/include/std_msgs/Header.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
  /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/teleop3d.cpp
