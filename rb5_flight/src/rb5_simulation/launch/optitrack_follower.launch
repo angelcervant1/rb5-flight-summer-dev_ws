@@ -8,7 +8,7 @@
 
    <include file="$(find natnet_ros_cpp)/launch/natnet_ros.launch"/>
 
-    <node 
+    <node
         name="drone_optitrack"
         pkg="rb5_simulation"
         type="drone_optitrack_rviz.py"
