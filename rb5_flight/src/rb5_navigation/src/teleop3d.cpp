@@ -7,7 +7,7 @@ class TeleopDrone
 public:
     TeleopDrone()
     {
-        cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
+        cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("mavros/setpoint_velocity/cmd_vel", 10);
         startControlLoop();
     }
 
