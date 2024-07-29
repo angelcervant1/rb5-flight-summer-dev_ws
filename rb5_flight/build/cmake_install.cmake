@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/natnet_ros_cpp/cmake_install.cmake")
+  include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/cmake_install.cmake")
 
 endif()

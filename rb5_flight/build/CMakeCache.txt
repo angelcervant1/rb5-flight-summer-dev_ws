@@ -490,6 +490,12 @@ optitrack-vrpn_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
 //Value Computed by CMake
+rb5_navigation_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation
+
+//Value Computed by CMake
+rb5_navigation_SOURCE_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation
+
+//Value Computed by CMake
 rb5_simulation_BINARY_DIR:STATIC=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation
 
 //Value Computed by CMake
@@ -702,7 +708,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
