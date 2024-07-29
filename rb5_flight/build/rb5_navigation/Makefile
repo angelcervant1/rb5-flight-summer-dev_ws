@@ -243,19 +243,19 @@ tf_generate_messages_nodejs/fast:
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rb5_navigation/CMakeFiles/offb_node.dir/rule:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_navigation/CMakeFiles/offb_node.dir/rule
-.PHONY : rb5_navigation/CMakeFiles/offb_node.dir/rule
+rb5_navigation/CMakeFiles/takeoff_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_navigation/CMakeFiles/takeoff_node.dir/rule
+.PHONY : rb5_navigation/CMakeFiles/takeoff_node.dir/rule
 
 # Convenience name for target.
-offb_node: rb5_navigation/CMakeFiles/offb_node.dir/rule
+takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/rule
 
-.PHONY : offb_node
+.PHONY : takeoff_node
 
 # fast build rule for target.
-offb_node/fast:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/offb_node.dir/build.make rb5_navigation/CMakeFiles/offb_node.dir/build
-.PHONY : offb_node/fast
+takeoff_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/build
+.PHONY : takeoff_node/fast
 
 src/offb_node.o: src/offb_node.cpp.o
 
@@ -263,7 +263,7 @@ src/offb_node.o: src/offb_node.cpp.o
 
 # target to build an object file
 src/offb_node.cpp.o:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/offb_node.dir/build.make rb5_navigation/CMakeFiles/offb_node.dir/src/offb_node.cpp.o
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o
 .PHONY : src/offb_node.cpp.o
 
 src/offb_node.i: src/offb_node.cpp.i
@@ -272,7 +272,7 @@ src/offb_node.i: src/offb_node.cpp.i
 
 # target to preprocess a source file
 src/offb_node.cpp.i:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/offb_node.dir/build.make rb5_navigation/CMakeFiles/offb_node.dir/src/offb_node.cpp.i
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.i
 .PHONY : src/offb_node.cpp.i
 
 src/offb_node.s: src/offb_node.cpp.s
@@ -281,7 +281,7 @@ src/offb_node.s: src/offb_node.cpp.s
 
 # target to generate assembly for a file
 src/offb_node.cpp.s:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/offb_node.dir/build.make rb5_navigation/CMakeFiles/offb_node.dir/src/offb_node.cpp.s
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s
 .PHONY : src/offb_node.cpp.s
 
 # Help Target
@@ -302,7 +302,7 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_nodejs"
-	@echo "... offb_node"
+	@echo "... takeoff_node"
 	@echo "... src/offb_node.o"
 	@echo "... src/offb_node.i"
 	@echo "... src/offb_node.s"
