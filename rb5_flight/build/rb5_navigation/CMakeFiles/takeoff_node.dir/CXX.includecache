@@ -865,4 +865,6 @@ mavros_msgs/SetMode.h
 -
 mavros_msgs/State.h
 -
+signal.h
+-
 

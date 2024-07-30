@@ -9,10 +9,23 @@
 #include <mavros_msgs/CommandBool.h>
 #include <mavros_msgs/SetMode.h>
 #include <mavros_msgs/State.h>
+#include <signal.h>
 
 mavros_msgs::State current_state;
+ros::ServiceClient set_mode_client;
 void state_cb(const mavros_msgs::State::ConstPtr& msg){
     current_state = *msg;
+}
+
+void shutdownHandler(int sig){
+    mavros_msgs::SetMode land_set_mode;
+    land_set_mode.request.custom_mode = "AUTO.LAND";
+    if (set_mode_client.call(land_set_mode) && land_set_mode.response.mode_sent) {
+        ROS_INFO("Land call received!");
+    } else {
+        ROS_WARN("Failed to send land command!");
+    }
+    ros::shutdown(); 
 }
 
 int main(int argc, char **argv)
@@ -26,9 +39,11 @@ int main(int argc, char **argv)
             ("mavros/setpoint_position/local", 10);
     ros::ServiceClient arming_client = nh.serviceClient<mavros_msgs::CommandBool>
             ("mavros/cmd/arming");
-    ros::ServiceClient set_mode_client = nh.serviceClient<mavros_msgs::SetMode>
+    set_mode_client = nh.serviceClient<mavros_msgs::SetMode>
             ("mavros/set_mode");
 
+    signal(SIGINT, shutdownHandler);
+    
     //the setpoint publishing rate MUST be faster than 2Hz
     ros::Rate rate(20.0);
 
@@ -91,6 +106,7 @@ int main(int argc, char **argv)
         ros::spinOnce();
         rate.sleep();
     }
+
 
     return 0;
 }
