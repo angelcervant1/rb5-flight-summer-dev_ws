@@ -79,6 +79,15 @@ int main(int argc, char **argv)
 
         local_pos_pub.publish(pose);
 
+        if(ros::Time::now() - last_request > ros::Duration(20.0)){
+            mavros_msgs::SetMode land_set_mode;
+            land_set_mode.request.custom_mode = "AUTO.LAND";
+            if(set_mode_client.call(land_set_mode) && land_set_mode.response.mode_sent){
+                ROS_INFO("Land call received!");
+                break;
+            }
+        }
+
         ros::spinOnce();
         rate.sleep();
     }

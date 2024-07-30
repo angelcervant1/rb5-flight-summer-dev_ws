@@ -3,6 +3,13 @@
 
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/geometry_msgs/Twist.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBool.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBoolRequest.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/CommandBoolResponse.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetMode.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetModeRequest.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/SetModeResponse.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/mavros_msgs/State.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -59,6 +66,7 @@ rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melod
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 rb5_navigation/CMakeFiles/teleop_ros_node.dir/src/teleop3d.cpp.o: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/teleop3d.cpp
