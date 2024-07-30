@@ -20,12 +20,13 @@ void state_cb(const mavros_msgs::State::ConstPtr& msg){
 void shutdownHandler(int sig){
     mavros_msgs::SetMode land_set_mode;
     land_set_mode.request.custom_mode = "AUTO.LAND";
+    ROS_INFO("Sending land command...");
     if (set_mode_client.call(land_set_mode) && land_set_mode.response.mode_sent) {
         ROS_INFO("Land call received!");
     } else {
         ROS_WARN("Failed to send land command!");
     }
-    ros::shutdown(); 
+    ros::shutdown();
 }
 
 int main(int argc, char **argv)
