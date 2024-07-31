@@ -7,7 +7,7 @@
     </node>
 
    <include file="$(find natnet_ros_cpp)/launch/natnet_ros.launch"/>
-
+    
     <node
         name="drone_optitrack"
         pkg="rb5_simulation"
