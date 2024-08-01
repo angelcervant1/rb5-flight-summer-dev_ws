@@ -116,6 +116,8 @@ teleop_ros_node_EXTERNAL_OBJECTS =
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: /usr/lib/x86_64-linux-gnu/libcurses.so
+/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: /usr/lib/x86_64-linux-gnu/libform.so
 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node: rb5_navigation/CMakeFiles/teleop_ros_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/teleop_ros_node"
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/teleop_ros_node.dir/link.txt --verbose=$(VERBOSE)

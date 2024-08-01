@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/lib;/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

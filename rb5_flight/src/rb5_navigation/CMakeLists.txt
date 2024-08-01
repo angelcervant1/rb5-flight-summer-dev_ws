@@ -20,6 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
+find_package(Curses REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -40,6 +41,7 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${CURSES_INCLUDE_DIR}
 )
 
 ## Declare a C++ executable
@@ -63,6 +65,7 @@ target_link_libraries(takeoff_node
 )
 target_link_libraries(teleop_ros_node
   ${catkin_LIBRARIES}
+  ${CURSES_LIBRARIES}
 )
 #target_link_libraries(landing_node
 #  ${catkin_LIBRARIES}
