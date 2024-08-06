@@ -1545,6 +1545,32 @@ takeoff_node/fast:
 	$(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/build
 .PHONY : takeoff_node/fast
 
+#=============================================================================
+# Target rules for targets named sim_teleop_node
+
+# Build rule for target.
+sim_teleop_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sim_teleop_node
+.PHONY : sim_teleop_node
+
+# fast build rule for target.
+sim_teleop_node/fast:
+	$(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/build
+.PHONY : sim_teleop_node/fast
+
+#=============================================================================
+# Target rules for targets named sim_takeoff_node
+
+# Build rule for target.
+sim_takeoff_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sim_takeoff_node
+.PHONY : sim_takeoff_node
+
+# fast build rule for target.
+sim_takeoff_node/fast:
+	$(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build
+.PHONY : sim_takeoff_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1664,6 +1690,8 @@ help:
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... takeoff_node"
+	@echo "... sim_teleop_node"
+	@echo "... sim_takeoff_node"
 .PHONY : help
 
 

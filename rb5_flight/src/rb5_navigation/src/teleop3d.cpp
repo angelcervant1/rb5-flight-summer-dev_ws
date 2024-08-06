@@ -6,15 +6,15 @@
 #include <mavros_msgs/State.h>
 #include <iostream>
 #include <ncurses.h>
-#include <csignal>
+#include <signal.h>
 
 class TeleopDrone
 {
 public:
     TeleopDrone()
     {
-        teleop_instance = this;  // Set the global instance pointer
-        signal(SIGINT, signalHandler);  // Register the static signal handler
+        teleop_instance = this;  
+        signal(SIGINT, signalHandler);  
 
         cmd_vel_pub_ = nh.advertise<geometry_msgs::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
         state_sub = nh.subscribe<mavros_msgs::State>("mavros/state", 10, &TeleopDrone::state_cb, this);
@@ -33,7 +33,7 @@ public:
     }
 
 private:
-    static TeleopDrone* teleop_instance; // Static pointer to instance
+    static TeleopDrone* teleop_instance;
     mavros_msgs::State current_state;
     ros::Subscriber state_sub;
     ros::Publisher local_pos_pub;
@@ -57,7 +57,7 @@ private:
         arm_cmd.request.value = true;
 
         ros::Time start_time = ros::Time::now();
-        ros::Duration timeout_duration(30.0); // Timeout duration
+        ros::Duration timeout_duration(30.0);
 
         while (ros::ok()) {
             if (ros::Time::now() - start_time > timeout_duration) {
@@ -85,9 +85,13 @@ private:
                 }
                 last_request = ros::Time::now();
             }
+             else {
+                ROS_INFO("OFFBOARD mode and armed state confirmed.");
+                return true;
+            }
 
             ros::spinOnce();
-            ros::Duration(0.1).sleep(); // Sleep to prevent high CPU usage
+            ros::Duration(0.1).sleep(); 
         }
         return false;
     }
@@ -97,15 +101,13 @@ private:
             ROS_ERROR("Failed to set OFFBOARD Mode...");
             return;
         }
-
+        ROS_INFO("Enter command (w/s/a/d/r/f/u/j): ");
         initscr();
-        timeout(100); // 100 ms timeout for getch()
+        timeout(100); 
         cbreak();
         noecho();
         
         geometry_msgs::Twist cmd_vel;
-        ROS_INFO("Enter command (w/s/a/d/r/f/u/j): ");
-        
         while (ros::ok())   
         {
             int ch = getch();
@@ -113,14 +115,14 @@ private:
 
             switch (ch)
             {
-                case 'w': cmd_vel.linear.x = 0.5; break;   // Move forward
-                case 's': cmd_vel.linear.x = -0.5; break;  // Move backward
-                case 'a': cmd_vel.linear.y = 0.5; break;   // Move left
-                case 'd': cmd_vel.linear.y = -0.5; break;  // Move right
-                case 'r': cmd_vel.angular.z = 0.5; break;   // Rotate clockwise
-                case 'f': cmd_vel.angular.z = -0.5; break;  // Rotate counter-clockwise
-                case 'u': cmd_vel.linear.z = 0.5; break;   // Move up
-                case 'j': cmd_vel.linear.z = -0.5; break;  // Move down
+                case 'w': cmd_vel.linear.x = 0.1; break;   // Move forward
+                case 's': cmd_vel.linear.x = -0.1; break;  // Move backward
+                case 'a': cmd_vel.linear.y = 0.1; break;   // Move left
+                case 'd': cmd_vel.linear.y = -0.1; break;  // Move right
+                case 'r': cmd_vel.angular.z = 0.1; break;   // Rotate clockwise
+                case 'f': cmd_vel.angular.z = -0.1; break;  // Rotate counter-clockwise
+                case 'u': cmd_vel.linear.z = 0.1; break;   // Move up
+                case 'j': cmd_vel.linear.z = -0.1; break;  // Move down
                 case ERR: publish_zero = true; break;
                 default: break; ROS_WARN("Invalid key");
             }
@@ -141,23 +143,23 @@ private:
         endwin();
     }
 
-    // Static signal handler
     static void signalHandler(int signum) {
         if (teleop_instance) {
             teleop_instance->disarmAndExit();
         }
+        endwin();
         ros::shutdown();
         exit(signum);
     }
 };
 
-// Initialize static member
+
 TeleopDrone* TeleopDrone::teleop_instance = nullptr;
 
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "ros_teleop_node");
     TeleopDrone teleop;
-    ros::spin(); // Ensure that ROS keeps running
+    ros::spin(); 
     return 0;
 }

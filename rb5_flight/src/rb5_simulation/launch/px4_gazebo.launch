@@ -6,4 +6,7 @@
 
     <!-- Load parameters from a YAML file -->
     <rosparam file="$(find rb5_simulation)/config/gazebo_px4.yaml" command="load"/>
+
+    <!-- <node name="teleop_ros" pkg="rb5_navigation" type="teleop_ros_node" output="screen"/> -->
+
 </launch>

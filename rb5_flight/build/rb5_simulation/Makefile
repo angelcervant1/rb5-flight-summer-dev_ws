@@ -68,37 +68,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -112,6 +92,27 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,17 +124,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -167,6 +167,90 @@ depend:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
+
+# Convenience name for target.
+sim_teleop_node: rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
+
+.PHONY : sim_teleop_node
+
+# fast build rule for target.
+sim_teleop_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/build
+.PHONY : sim_teleop_node/fast
+
+# Convenience name for target.
+rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
+
+# Convenience name for target.
+sim_takeoff_node: rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
+
+.PHONY : sim_takeoff_node
+
+# fast build rule for target.
+sim_takeoff_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build
+.PHONY : sim_takeoff_node/fast
+
+src/sim_takeoff.o: src/sim_takeoff.cpp.o
+
+.PHONY : src/sim_takeoff.o
+
+# target to build an object file
+src/sim_takeoff.cpp.o:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.o
+.PHONY : src/sim_takeoff.cpp.o
+
+src/sim_takeoff.i: src/sim_takeoff.cpp.i
+
+.PHONY : src/sim_takeoff.i
+
+# target to preprocess a source file
+src/sim_takeoff.cpp.i:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.i
+.PHONY : src/sim_takeoff.cpp.i
+
+src/sim_takeoff.s: src/sim_takeoff.cpp.s
+
+.PHONY : src/sim_takeoff.s
+
+# target to generate assembly for a file
+src/sim_takeoff.cpp.s:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.s
+.PHONY : src/sim_takeoff.cpp.s
+
+src/sim_teleop3d.o: src/sim_teleop3d.cpp.o
+
+.PHONY : src/sim_teleop3d.o
+
+# target to build an object file
+src/sim_teleop3d.cpp.o:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.o
+.PHONY : src/sim_teleop3d.cpp.o
+
+src/sim_teleop3d.i: src/sim_teleop3d.cpp.i
+
+.PHONY : src/sim_teleop3d.i
+
+# target to preprocess a source file
+src/sim_teleop3d.cpp.i:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.i
+.PHONY : src/sim_teleop3d.cpp.i
+
+src/sim_teleop3d.s: src/sim_teleop3d.cpp.s
+
+.PHONY : src/sim_teleop3d.s
+
+# target to generate assembly for a file
+src/sim_teleop3d.cpp.s:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.s
+.PHONY : src/sim_teleop3d.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,12 +258,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... edit_cache"
-	@echo "... list_install_components"
-	@echo "... test"
-	@echo "... install/local"
-	@echo "... rebuild_cache"
 	@echo "... install"
+	@echo "... sim_teleop_node"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... list_install_components"
+	@echo "... sim_takeoff_node"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... src/sim_takeoff.o"
+	@echo "... src/sim_takeoff.i"
+	@echo "... src/sim_takeoff.s"
+	@echo "... src/sim_teleop3d.o"
+	@echo "... src/sim_teleop3d.i"
+	@echo "... src/sim_teleop3d.s"
 .PHONY : help
 
 
