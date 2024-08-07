@@ -55,9 +55,10 @@ int main(int argc, char **argv)
     }
 
     geometry_msgs::PoseStamped pose;
+    pose.header.frame_id = "map";
     pose.pose.position.x = 0;
-    pose.pose.position.y = 0;
-    pose.pose.position.z = 0.9;
+    pose.pose.position.y = 1;
+    pose.pose.position.z = 4.5;
 
     //send a few setpoints before starting
     for(int i = 100; ros::ok() && i > 0; --i){
@@ -92,7 +93,7 @@ int main(int argc, char **argv)
                 last_request = ros::Time::now();
             }
         }
-
+        pose.header.stamp = ros::Time::now();
         local_pos_pub.publish(pose);
 
         ros::spinOnce();

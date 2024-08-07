@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   tf2_ros
+  tf2
   tf_conversions
 )
 
@@ -49,7 +50,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(takeoff_node src/offb_node.cpp)
 add_executable(teleop_ros_node src/teleop3d.cpp)
-#add_executable(landing_node src/landing.cpp)
+add_executable(position_node src/positionPub.cpp)
 
 
 ## Add cmake target dependencies of the executable
@@ -57,7 +58,7 @@ add_executable(teleop_ros_node src/teleop3d.cpp)
 ## either from message generation or dynamic reconfigure
 add_dependencies(takeoff_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(teleop_ros_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-#add_dependencies(landing_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(position_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(takeoff_node
@@ -67,9 +68,9 @@ target_link_libraries(teleop_ros_node
   ${catkin_LIBRARIES}
   ${CURSES_LIBRARIES}
 )
-#target_link_libraries(landing_node
-#  ${catkin_LIBRARIES}
-#)
+target_link_libraries(position_node
+  ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##

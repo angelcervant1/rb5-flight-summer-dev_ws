@@ -243,6 +243,21 @@ tf_generate_messages_lisp/fast:
 .PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
+rb5_navigation/CMakeFiles/position_node.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_navigation/CMakeFiles/position_node.dir/rule
+.PHONY : rb5_navigation/CMakeFiles/position_node.dir/rule
+
+# Convenience name for target.
+position_node: rb5_navigation/CMakeFiles/position_node.dir/rule
+
+.PHONY : position_node
+
+# fast build rule for target.
+position_node/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/position_node.dir/build.make rb5_navigation/CMakeFiles/position_node.dir/build
+.PHONY : position_node/fast
+
+# Convenience name for target.
 rb5_navigation/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_navigation/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 .PHONY : rb5_navigation/CMakeFiles/tf_generate_messages_nodejs.dir/rule
@@ -299,6 +314,33 @@ src/offb_node.cpp.s:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/takeoff_node.dir/build.make rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s
 .PHONY : src/offb_node.cpp.s
 
+src/positionPub.o: src/positionPub.cpp.o
+
+.PHONY : src/positionPub.o
+
+# target to build an object file
+src/positionPub.cpp.o:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/position_node.dir/build.make rb5_navigation/CMakeFiles/position_node.dir/src/positionPub.cpp.o
+.PHONY : src/positionPub.cpp.o
+
+src/positionPub.i: src/positionPub.cpp.i
+
+.PHONY : src/positionPub.i
+
+# target to preprocess a source file
+src/positionPub.cpp.i:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/position_node.dir/build.make rb5_navigation/CMakeFiles/position_node.dir/src/positionPub.cpp.i
+.PHONY : src/positionPub.cpp.i
+
+src/positionPub.s: src/positionPub.cpp.s
+
+.PHONY : src/positionPub.s
+
+# target to generate assembly for a file
+src/positionPub.cpp.s:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_navigation/CMakeFiles/position_node.dir/build.make rb5_navigation/CMakeFiles/position_node.dir/src/positionPub.cpp.s
+.PHONY : src/positionPub.cpp.s
+
 src/teleop3d.o: src/teleop3d.cpp.o
 
 .PHONY : src/teleop3d.o
@@ -344,11 +386,15 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_py"
 	@echo "... tf_generate_messages_lisp"
+	@echo "... position_node"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... takeoff_node"
 	@echo "... src/offb_node.o"
 	@echo "... src/offb_node.i"
 	@echo "... src/offb_node.s"
+	@echo "... src/positionPub.o"
+	@echo "... src/positionPub.i"
+	@echo "... src/positionPub.s"
 	@echo "... src/teleop3d.o"
 	@echo "... src/teleop3d.i"
 	@echo "... src/teleop3d.s"

@@ -4,7 +4,7 @@
     <arg name="fcu_url" default="udp://127.0.0.1:14551@:14551" />
     
     <!--ADD THE GROUND CONTROL STATION HOST IP-->
-    <arg name="gcs_url" default="udp://127.0.0.1:14551@:14551" /> 
+    <arg name="gcs_url" default="" /> 
     <arg name="tgt_system" default="$(env PX4_SYS_ID)" />
     <arg name="tgt_component" default="1" />
     <arg name="log_output" default="screen" />

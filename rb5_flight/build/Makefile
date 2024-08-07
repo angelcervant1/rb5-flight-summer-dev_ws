@@ -1520,6 +1520,19 @@ tf_generate_messages_lisp/fast:
 .PHONY : tf_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named position_node
+
+# Build rule for target.
+position_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 position_node
+.PHONY : position_node
+
+# fast build rule for target.
+position_node/fast:
+	$(MAKE) -f rb5_navigation/CMakeFiles/position_node.dir/build.make rb5_navigation/CMakeFiles/position_node.dir/build
+.PHONY : position_node/fast
+
+#=============================================================================
 # Target rules for targets named tf_generate_messages_nodejs
 
 # Build rule for target.
@@ -1688,6 +1701,7 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_py"
 	@echo "... tf_generate_messages_lisp"
+	@echo "... position_node"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... takeoff_node"
 	@echo "... sim_teleop_node"

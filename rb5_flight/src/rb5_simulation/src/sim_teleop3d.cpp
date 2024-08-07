@@ -136,7 +136,7 @@ private:
                 cmd_vel.twist.linear.z = 0;
                 cmd_vel.twist.angular.z = 0;
             }
-            cmd_vel.header.frame_id = "base_link"; // Set the frame_id            cmd_vel_pub_.publish(cmd_vel);
+            cmd_vel.header.frame_id = "map";
             // ROS_INFO("Publishing command: linear(%f, %f, %f) angular(%f)",
             // cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.linear.z,
             // cmd_vel.angular.z);

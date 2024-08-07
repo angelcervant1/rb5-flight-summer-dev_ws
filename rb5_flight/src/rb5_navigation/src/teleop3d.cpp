@@ -11,7 +11,7 @@
 class TeleopDrone
 {
 public:
-    TeleopDrone()
+    TeleopDrone() : rate(20.0)  // Initialize rate to 20 Hz
     {
         teleop_instance = this;  
         signal(SIGINT, signalHandler);  
@@ -21,15 +21,20 @@ public:
         local_pos_pub = nh.advertise<geometry_msgs::PoseStamped> ("mavros/setpoint_position/local", 10);
         arming_client = nh.serviceClient<mavros_msgs::CommandBool>("mavros/cmd/arming");
         set_mode_client = nh.serviceClient<mavros_msgs::SetMode>("mavros/set_mode");
+        takeoff();
         startControlLoop();
     }
 
     void disarmAndExit() {
-        ROS_INFO("Disarming and exiting...");
-        mavros_msgs::CommandBool arm_cmd;
-        arm_cmd.request.value = false;
-        arming_client.call(arm_cmd);
-        ROS_INFO("Vehicle disarmed.");
+        mavros_msgs::SetMode land_set_mode;
+        land_set_mode.request.custom_mode = "AUTO.LAND";
+        ROS_INFO("Sending land command...");
+        if (set_mode_client.call(land_set_mode) && land_set_mode.response.mode_sent) {
+            ROS_INFO("Land call received!");
+        } else {
+            ROS_WARN("Failed to send land command!");
+        }
+        ros::shutdown();
     }
 
 private:
@@ -42,11 +47,73 @@ private:
     ros::NodeHandle nh;
     ros::Publisher cmd_vel_pub_;
     ros::Time last_request = ros::Time::now();
+    ros::Time start_time;
+    ros::Duration dt;
+    bool teleop_enable = false;
+    ros::Rate rate;  // Declare ros::Rate object
 
     void state_cb(const mavros_msgs::State::ConstPtr& msg){
         current_state = *msg;
+    }   
+
+    void takeoff() {
+        while (ros::ok() && !current_state.connected) {
+            ros::spinOnce();
+            rate.sleep();
+        }
+
+        geometry_msgs::PoseStamped pose;
+        pose.pose.position.x = 0;
+        pose.pose.position.y = 0;
+        pose.pose.position.z = 2.0;
+
+        // Send a few setpoints before starting
+        for (int i = 50; ros::ok() && i > 0; --i) {
+            local_pos_pub.publish(pose);
+            ros::spinOnce();
+            rate.sleep();
+        }
+
+        mavros_msgs::SetMode offb_set_mode;
+        offb_set_mode.request.custom_mode = "OFFBOARD";
+
+        mavros_msgs::CommandBool arm_cmd;
+        arm_cmd.request.value = true;
+
+        ros::Time last_request = ros::Time::now();
+
+        while (ros::ok()) {
+            if (current_state.mode != "OFFBOARD" &&
+                (ros::Time::now() - last_request > ros::Duration(5.0))) {
+                if (set_mode_client.call(offb_set_mode) &&
+                    offb_set_mode.response.mode_sent) {
+                    ROS_INFO("Offboard enabled");
+                }
+                last_request = ros::Time::now();
+            } else {
+                if (!current_state.armed &&
+                    (ros::Time::now() - last_request > ros::Duration(5.0))) {
+                    if (arming_client.call(arm_cmd) &&
+                        arm_cmd.response.success) {
+                        ROS_INFO("Vehicle armed");
+                    }
+                    last_request = ros::Time::now();
+                }
+            }
+
+            local_pos_pub.publish(pose);
+
+            // 10 seconds till the teleop node overrides the takeoff routine
+            if (ros::Time::now() - last_request > ros::Duration(8.0)) {
+                break;
+                teleop_enable = true;
+            }
+
+            ros::spinOnce();
+            rate.sleep();
+        }
     }
-    
+
     bool setOffboardMode() {
         ROS_INFO("Trying to set OFFBOARD mode...");
 
@@ -56,7 +123,7 @@ private:
         mavros_msgs::CommandBool arm_cmd;
         arm_cmd.request.value = true;
 
-        ros::Time start_time = ros::Time::now();
+        start_time = ros::Time::now();
         ros::Duration timeout_duration(30.0);
 
         while (ros::ok()) {
@@ -84,8 +151,7 @@ private:
                     ROS_WARN("Failed to arm vehicle.");
                 }
                 last_request = ros::Time::now();
-            }
-             else {
+            } else {
                 ROS_INFO("OFFBOARD mode and armed state confirmed.");
                 return true;
             }
@@ -97,10 +163,11 @@ private:
     }
 
     void startControlLoop() {        
-        if(!setOffboardMode()){
+        if (!setOffboardMode()) {
             ROS_ERROR("Failed to set OFFBOARD Mode...");
             return;
         }
+        
         ROS_INFO("Enter command (w/s/a/d/r/f/u/j): ");
         initscr();
         timeout(100); 
@@ -108,13 +175,11 @@ private:
         noecho();
         
         geometry_msgs::Twist cmd_vel;
-        while (ros::ok())   
-        {
+        while (ros::ok()) {
             int ch = getch();
             bool publish_zero = false;            
 
-            switch (ch)
-            {
+            switch (ch) {
                 case 'w': cmd_vel.linear.x = 0.5; break;   // Move forward
                 case 's': cmd_vel.linear.x = -0.5; break;  // Move backward
                 case 'a': cmd_vel.linear.y = 0.5; break;   // Move left
@@ -127,7 +192,7 @@ private:
                 default: break; ROS_WARN("Invalid key");
             }
 
-            if (publish_zero){
+            if (publish_zero) {
                 cmd_vel.linear.x = 0;
                 cmd_vel.linear.y = 0;
                 cmd_vel.linear.z = 0;
@@ -139,6 +204,7 @@ private:
             // cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.linear.z,
             // cmd_vel.angular.z);
             ros::spinOnce();
+            rate.sleep();
         }
         endwin();
     }

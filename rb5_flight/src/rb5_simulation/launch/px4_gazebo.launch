@@ -1,5 +1,7 @@
 <launch>
     
+    <node name="position_node" pkg="rb5_navigation" type="position_node" output="screen"/> 
+    
     <include file="$(find mavros)/launch/px4.launch">
         <arg name="fcu_url" value="udp://:14540@127.0.0.1:14557"/>
     </include>
@@ -7,6 +9,5 @@
     <!-- Load parameters from a YAML file -->
     <rosparam file="$(find rb5_simulation)/config/gazebo_px4.yaml" command="load"/>
 
-    <!-- <node name="teleop_ros" pkg="rb5_navigation" type="teleop_ros_node" output="screen"/> -->
 
 </launch>
