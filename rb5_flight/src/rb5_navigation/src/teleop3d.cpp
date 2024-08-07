@@ -115,14 +115,14 @@ private:
 
             switch (ch)
             {
-                case 'w': cmd_vel.linear.x = 0.1; break;   // Move forward
-                case 's': cmd_vel.linear.x = -0.1; break;  // Move backward
-                case 'a': cmd_vel.linear.y = 0.1; break;   // Move left
-                case 'd': cmd_vel.linear.y = -0.1; break;  // Move right
-                case 'r': cmd_vel.angular.z = 0.1; break;   // Rotate clockwise
-                case 'f': cmd_vel.angular.z = -0.1; break;  // Rotate counter-clockwise
-                case 'u': cmd_vel.linear.z = 0.1; break;   // Move up
-                case 'j': cmd_vel.linear.z = -0.1; break;  // Move down
+                case 'w': cmd_vel.linear.x = 0.5; break;   // Move forward
+                case 's': cmd_vel.linear.x = -0.5; break;  // Move backward
+                case 'a': cmd_vel.linear.y = 0.5; break;   // Move left
+                case 'd': cmd_vel.linear.y = -0.5; break;  // Move right
+                case 'r': cmd_vel.angular.z = 0.5; break;   // Rotate clockwise
+                case 'f': cmd_vel.angular.z = -0.5; break;  // Rotate counter-clockwise
+                case 'u': cmd_vel.linear.z = 0.5; break;   // Move up
+                case 'j': cmd_vel.linear.z = -0.5; break;  // Move down
                 case ERR: publish_zero = true; break;
                 default: break; ROS_WARN("Invalid key");
             }
