@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(rb5_simulation)
+project(optitrack-vrpn)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -8,29 +8,12 @@ project(rb5_simulation)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-<<<<<<< HEAD
   rospy
-  sensor_msgs
   std_msgs
-  std_msgs
-=======
-  geometry_msgs
-  mavros_msgs
-  nav_msgs
-  rospy
-  roscpp
-  std_msgs
-  tf2_ros
-  tf_conversions
->>>>>>> 2-ros-teleop
 )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-<<<<<<< HEAD
-=======
-find_package(Curses REQUIRED)
->>>>>>> 2-ros-teleop
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -86,11 +69,7 @@ find_package(Curses REQUIRED)
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
 #   DEPENDENCIES
-<<<<<<< HEAD
-#   sensor_msgs#   std_msgs#   std_msgs
-=======
-#   geometry_msgs#   nav_msgs#   std_msgs
->>>>>>> 2-ros-teleop
+#   std_msgs
 # )
 
 ################################################
@@ -124,12 +103,8 @@ find_package(Curses REQUIRED)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES rb5_simulation
-<<<<<<< HEAD
-#  CATKIN_DEPENDS rospy sensor_msgs std_msgs std_msgs
-=======
-#  CATKIN_DEPENDS geometry_msgs nav_msgs rospy std_msgs tf2_ros tf_conversions
->>>>>>> 2-ros-teleop
+#  LIBRARIES optitrack-vrpn
+#  CATKIN_DEPENDS rospy std_msgs
 #  DEPENDS system_lib
 )
 
@@ -142,16 +117,11 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
-<<<<<<< HEAD
-=======
-  ${CURSES_INCLUDE_DIR}
-
->>>>>>> 2-ros-teleop
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/rb5_simulation.cpp
+#   src/${PROJECT_NAME}/optitrack-vrpn.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -162,12 +132,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-<<<<<<< HEAD
-# add_executable(${PROJECT_NAME}_node src/rb5_simulation_node.cpp)
-=======
-add_executable(sim_takeoff_node src/sim_takeoff.cpp)
-add_executable(sim_teleop_node src/sim_teleop3d.cpp)
->>>>>>> 2-ros-teleop
+# add_executable(${PROJECT_NAME}_node src/optitrack-vrpn_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -177,29 +142,12 @@ add_executable(sim_teleop_node src/sim_teleop3d.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-<<<<<<< HEAD
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-=======
-add_dependencies(sim_takeoff_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(sim_teleop_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
-## Specify libraries to link a library or executable target against
- target_link_libraries(sim_takeoff_node
-   ${catkin_LIBRARIES}
-
- )
- target_link_libraries(sim_teleop_node
-   ${catkin_LIBRARIES}
-   ${CURSES_LIBRARIES}
-
- )
-
->>>>>>> 2-ros-teleop
 
 #############
 ## Install ##
@@ -217,11 +165,7 @@ add_dependencies(sim_teleop_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html
-<<<<<<< HEAD
 # install(TARGETS ${PROJECT_NAME}_node
-=======
-#   install(TARGETS ${PROJECT_NAME}_node
->>>>>>> 2-ros-teleop
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 # )
 
@@ -252,7 +196,7 @@ add_dependencies(sim_teleop_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EX
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_rb5_simulation.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_optitrack-vrpn.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

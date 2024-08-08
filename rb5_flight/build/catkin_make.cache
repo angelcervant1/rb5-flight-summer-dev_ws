@@ -1,2 +1,0 @@
-rb5_simulation
--DCATKIN_DEVEL_PREFIX=/ros_ws/rb5_flight/devel -DCMAKE_INSTALL_PREFIX=/ros_ws/rb5_flight/install -G Unix Makefiles
