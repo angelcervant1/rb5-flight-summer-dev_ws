@@ -5,6 +5,7 @@
 
 geometry_msgs::Twist cmd_vel;
 geometry_msgs::PoseStamped pose;
+
 ros::Duration dt;
 ros::Publisher pose_pub;
 ros::Time curr_time;
@@ -39,14 +40,23 @@ void cmd_vell_cb(const geometry_msgs::Twist::ConstPtr& msg){
 
     
 }
+
 void start_node(int argc, char** argv){
 
     ros::init(argc, argv, "pose_publisher_node");
     ros::NodeHandle nh;
-    pose_pub = nh.advertise<geometry_msgs::PoseStamped>("/mavros/setpoint_position/local", 10);
-    ros::Subscriber cmd_vel_sub = nh.subscribe<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped",10, cmd_vell_cb);
+    pose_pub = nh.advertise<geometry_msgs::PoseStamped>("mavros/setpoint_position/local", 10);
+    ros::Subscriber cmd_vel_sub = nh.subscribe<geometry_msgs::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped",10, cmd_vell_cb);
     ros::Rate rate(20.0);
-  
+    
+    curr_time = ros::Time::now();
+    last_time = ros::Time::now();
+
+    // Set initial position
+    pose.pose.position.x = 0;
+    pose.pose.position.y = 0;
+    pose.pose.position.z = 2.0;
+
     while (ros::ok()){
         ros::spinOnce();
         rate.sleep();

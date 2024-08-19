@@ -63,16 +63,11 @@ private:
         }
 
         geometry_msgs::PoseStamped pose;
+        pose.header.frame_id = "map";
         pose.pose.position.x = 0;
         pose.pose.position.y = 0;
         pose.pose.position.z = 2.0;
 
-        // Send a few setpoints before starting
-        for (int i = 50; ros::ok() && i > 0; --i) {
-            local_pos_pub.publish(pose);
-            ros::spinOnce();
-            rate.sleep();
-        }
 
         mavros_msgs::SetMode offb_set_mode;
         offb_set_mode.request.custom_mode = "OFFBOARD";
@@ -105,8 +100,8 @@ private:
 
             // 10 seconds till the teleop node overrides the takeoff routine
             if (ros::Time::now() - last_request > ros::Duration(8.0)) {
-                break;
                 teleop_enable = true;
+                return;
             }
 
             ros::spinOnce();
@@ -157,7 +152,8 @@ private:
             }
 
             ros::spinOnce();
-            ros::Duration(0.1).sleep(); 
+            rate.sleep();
+
         }
         return false;
     }
@@ -172,12 +168,12 @@ private:
         initscr();
         timeout(100); 
         cbreak();
-        noecho();
+        noecho(); 
         
         geometry_msgs::Twist cmd_vel;
         while (ros::ok()) {
             int ch = getch();
-            bool publish_zero = false;            
+            bool publish_zero = false;           
 
             switch (ch) {
                 case 'w': cmd_vel.linear.x = 0.5; break;   // Move forward
@@ -200,9 +196,6 @@ private:
             }
 
             cmd_vel_pub_.publish(cmd_vel);
-            // ROS_INFO("Publishing command: linear(%f, %f, %f) angular(%f)",
-            // cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.linear.z,
-            // cmd_vel.angular.z);
             ros::spinOnce();
             rate.sleep();
         }
@@ -224,7 +217,7 @@ TeleopDrone* TeleopDrone::teleop_instance = nullptr;
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "ros_teleop_node");
+    ros::init(argc, argv, "position_publisher");
     TeleopDrone teleop;
     ros::spin(); 
     return 0;
