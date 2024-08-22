@@ -1,6 +1,2 @@
 - setup-file:
-<<<<<<< HEAD
-    local-name: /ros_ws/rb5_flight/install/setup.sh
-=======
     local-name: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/setup.sh
->>>>>>> 2-ros-teleop

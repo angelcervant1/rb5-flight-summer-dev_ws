@@ -43,17 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /ros_ws/rb5_flight/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5_flight/build
-=======
 CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
->>>>>>> 2-ros-teleop
 
 # Utility rule file for clean_test_results.
 
@@ -61,11 +54,7 @@ CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-<<<<<<< HEAD
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /ros_ws/rb5_flight/build/test_results
-=======
 	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/test_results
->>>>>>> 2-ros-teleop
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -82,10 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5_flight/src /ros_ws/rb5_flight/src /ros_ws/rb5_flight/build /ros_ws/rb5_flight/build /ros_ws/rb5_flight/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
->>>>>>> 2-ros-teleop
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

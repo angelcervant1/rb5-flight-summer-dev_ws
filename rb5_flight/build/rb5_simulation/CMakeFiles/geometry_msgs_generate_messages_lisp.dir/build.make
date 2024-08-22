@@ -43,17 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /ros_ws/rb5_flight/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5_flight/build
-=======
 CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
->>>>>>> 2-ros-teleop
 
 # Utility rule file for geometry_msgs_generate_messages_lisp.
 
@@ -70,18 +63,10 @@ rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build: geomet
 .PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 
 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build/rb5_simulation && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
-.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-
-rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend:
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5_flight/src /ros_ws/rb5_flight/src/rb5_simulation /ros_ws/rb5_flight/build /ros_ws/rb5_flight/build/rb5_simulation /ros_ws/rb5_flight/build/rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend:
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_simulation /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
->>>>>>> 2-ros-teleop
 .PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 

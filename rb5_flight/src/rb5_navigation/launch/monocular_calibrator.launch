@@ -1,0 +1,18 @@
+<launch>
+
+  <arg name="in_image_topic" default="/usb_cam/image_raw"/>
+  <arg name="out_image_topic" default="/left"/>
+  
+  <arg name="calibration_config" default=
+  "--size 8x5 
+  --square 0.15 
+  image:=$(arg in_image_topic) 
+  camera:=/usb_cam 
+  --no-service-check"/>
+
+  <node name="camera_calibrator" pkg="camera_calibration" type="cameracalibrator.py" args="$(arg calibration_config)"/> 
+
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+  </node>
+
+</launch>

@@ -43,17 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /ros_ws/rb5_flight/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5_flight/build
-=======
 CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
->>>>>>> 2-ros-teleop
 
 # Utility rule file for doxygen.
 
@@ -74,10 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5_flight/src /ros_ws/rb5_flight/src /ros_ws/rb5_flight/build /ros_ws/rb5_flight/build /ros_ws/rb5_flight/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
->>>>>>> 2-ros-teleop
 .PHONY : CMakeFiles/doxygen.dir/depend
 

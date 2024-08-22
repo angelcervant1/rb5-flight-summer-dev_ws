@@ -1,0 +1,5 @@
+<launch>
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <param name="camera_info_url" value="file:///ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/head_camera.yaml"/>
+    </node>
+</launch>

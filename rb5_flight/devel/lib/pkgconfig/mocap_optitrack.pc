@@ -1,8 +1,0 @@
-prefix=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel
-
-Name: mocap_optitrack
-Description: Description of mocap_optitrack
-Version: 0.0.0
-Cflags: -I/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mocap_optitrack/include
-Libs: -L${prefix}/lib 
-Requires: roscpp message_runtime

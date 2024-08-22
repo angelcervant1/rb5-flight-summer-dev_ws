@@ -4,13 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
-  "/usr/src/googletest/googletest/src/gtest-all.cc" "/ros_ws/rb5_flight/build/gtest/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o"
-  "/usr/src/googletest/googlemock/src/gmock-all.cc" "/ros_ws/rb5_flight/build/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
-=======
   "/usr/src/googletest/googletest/src/gtest-all.cc" "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o"
   "/usr/src/googletest/googlemock/src/gmock-all.cc" "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
->>>>>>> 2-ros-teleop
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

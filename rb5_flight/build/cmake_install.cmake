@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-# Install script for directory: /ros_ws/rb5_flight/src
-
-# Set the install prefix
-if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/ros_ws/rb5_flight/install")
-=======
 # Install script for directory: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install")
->>>>>>> 2-ros-teleop
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -57,152 +49,93 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/_setup_util.py")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/_setup_util.py")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE PROGRAM FILES "/ros_ws/rb5_flight/build/catkin_generated/installspace/_setup_util.py")
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE PROGRAM FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/_setup_util.py")
->>>>>>> 2-ros-teleop
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/env.sh")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/env.sh")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE PROGRAM FILES "/ros_ws/rb5_flight/build/catkin_generated/installspace/env.sh")
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE PROGRAM FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/env.sh")
->>>>>>> 2-ros-teleop
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/setup.bash;/ros_ws/rb5_flight/install/local_setup.bash")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/setup.bash;/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/local_setup.bash")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE FILE FILES
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/setup.bash"
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/local_setup.bash"
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE FILE FILES
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/setup.bash"
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/local_setup.bash"
->>>>>>> 2-ros-teleop
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/setup.sh;/ros_ws/rb5_flight/install/local_setup.sh")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/setup.sh;/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/local_setup.sh")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE FILE FILES
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/setup.sh"
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/local_setup.sh"
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE FILE FILES
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/setup.sh"
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/local_setup.sh"
->>>>>>> 2-ros-teleop
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/setup.zsh;/ros_ws/rb5_flight/install/local_setup.zsh")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/setup.zsh;/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/local_setup.zsh")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE FILE FILES
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/setup.zsh"
-    "/ros_ws/rb5_flight/build/catkin_generated/installspace/local_setup.zsh"
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE FILE FILES
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/setup.zsh"
     "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/local_setup.zsh"
->>>>>>> 2-ros-teleop
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-<<<<<<< HEAD
-   "/ros_ws/rb5_flight/install/.rosinstall")
-=======
    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/.rosinstall")
->>>>>>> 2-ros-teleop
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-<<<<<<< HEAD
-file(INSTALL DESTINATION "/ros_ws/rb5_flight/install" TYPE FILE FILES "/ros_ws/rb5_flight/build/catkin_generated/installspace/.rosinstall")
-=======
 file(INSTALL DESTINATION "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install" TYPE FILE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/catkin_generated/installspace/.rosinstall")
->>>>>>> 2-ros-teleop
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-<<<<<<< HEAD
-  include("/ros_ws/rb5_flight/build/gtest/cmake_install.cmake")
-  include("/ros_ws/rb5_flight/build/rb5_simulation/cmake_install.cmake")
-=======
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/cmake_install.cmake")
+  include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/natnet_ros_cpp/cmake_install.cmake")
   include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/cmake_install.cmake")
-  include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/cmake_install.cmake")
->>>>>>> 2-ros-teleop
 
 endif()
 
@@ -214,9 +147,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
-file(WRITE "/ros_ws/rb5_flight/build/${CMAKE_INSTALL_MANIFEST}"
-=======
 file(WRITE "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> 2-ros-teleop
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

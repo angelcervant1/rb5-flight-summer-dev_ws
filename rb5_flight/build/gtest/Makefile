@@ -48,17 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /ros_ws/rb5_flight/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5_flight/build
-=======
 CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
->>>>>>> 2-ros-teleop
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -144,24 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5_flight/build/CMakeFiles /ros_ws/rb5_flight/build/gtest/CMakeFiles/progress.marks
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5_flight/build/CMakeFiles 0
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/CMakeFiles/progress.marks
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
->>>>>>> 2-ros-teleop
 .PHONY : all
 
 # The main clean target
 clean:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
->>>>>>> 2-ros-teleop
 .PHONY : clean
 
 # The main clean target
@@ -171,29 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
->>>>>>> 2-ros-teleop
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
->>>>>>> 2-ros-teleop
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
->>>>>>> 2-ros-teleop
 .PHONY : depend
 
 # Help Target
@@ -220,10 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
->>>>>>> 2-ros-teleop
 .PHONY : cmake_check_build_system
 

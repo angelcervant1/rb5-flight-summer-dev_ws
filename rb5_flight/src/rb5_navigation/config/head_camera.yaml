@@ -1,0 +1,22 @@
+# Asus TUF F15 Webcam Parameters (angelcervant)
+
+image_width: 640
+image_height: 480
+camera_name: head_camera
+camera_matrix:
+  rows: 3 
+  cols: 3
+  data: [641.0813744041162, 0, 311.6705550704914, 0, 638.5575236278869, 246.2349007877098, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [0.05288773177166605, -0.1329252876424239, -0.0002621368313884623, -0.001353948304334706, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [644.1670532226562, 0, 310.9717016147715, 0, 0, 642.3270263671875, 246.1537990775178, 0, 0, 0, 1, 0]

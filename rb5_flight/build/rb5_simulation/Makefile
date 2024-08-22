@@ -48,17 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /ros_ws/rb5_flight/src
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5_flight/build
-=======
 CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
->>>>>>> 2-ros-teleop
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -75,7 +68,28 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-<<<<<<< HEAD
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -88,8 +102,27 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-=======
->>>>>>> 2-ros-teleop
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -102,110 +135,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-<<<<<<< HEAD
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-=======
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
->>>>>>> 2-ros-teleop
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-<<<<<<< HEAD
-=======
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
->>>>>>> 2-ros-teleop
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-<<<<<<< HEAD
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# The main all target
-all: cmake_check_build_system
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5_flight/build/CMakeFiles /ros_ws/rb5_flight/build/rb5_simulation/CMakeFiles/progress.marks
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5_flight/build/CMakeFiles 0
-=======
 # The main all target
 all: cmake_check_build_system
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_simulation/CMakeFiles/progress.marks
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
->>>>>>> 2-ros-teleop
 .PHONY : all
 
 # The main clean target
 clean:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/clean
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/clean
->>>>>>> 2-ros-teleop
 .PHONY : clean
 
 # The main clean target
@@ -215,31 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/preinstall
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/preinstall
->>>>>>> 2-ros-teleop
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/preinstall
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/preinstall
->>>>>>> 2-ros-teleop
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -249,12 +179,12 @@ sensor_msgs_generate_messages_py: rb5_simulation/CMakeFiles/sensor_msgs_generate
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -264,27 +194,12 @@ sensor_msgs_generate_messages_nodejs: rb5_simulation/CMakeFiles/sensor_msgs_gene
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -294,102 +209,12 @@ geometry_msgs_generate_messages_cpp: rb5_simulation/CMakeFiles/geometry_msgs_gen
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/build.make rb5_simulation/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make rb5_simulation/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make rb5_simulation/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -399,12 +224,12 @@ sensor_msgs_generate_messages_cpp: rb5_simulation/CMakeFiles/sensor_msgs_generat
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -414,42 +239,42 @@ sensor_msgs_generate_messages_eus: rb5_simulation/CMakeFiles/sensor_msgs_generat
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+sensor_msgs_generate_messages_lisp: rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : std_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
 
 # fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make rb5_simulation/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+sensor_msgs_generate_messages_lisp/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make rb5_simulation/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_py: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_py
 
 # fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make rb5_simulation/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+geometry_msgs_generate_messages_py/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -459,96 +284,38 @@ geometry_msgs_generate_messages_lisp: rb5_simulation/CMakeFiles/geometry_msgs_ge
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /ros_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
-=======
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-.PHONY : depend
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
+rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sim_teleop_node: rb5_simulation/CMakeFiles/sim_teleop_node.dir/rule
+geometry_msgs_generate_messages_nodejs: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : sim_teleop_node
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-sim_teleop_node/fast:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/build
-.PHONY : sim_teleop_node/fast
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
-.PHONY : rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
+rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f CMakeFiles/Makefile2 rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-sim_takeoff_node: rb5_simulation/CMakeFiles/sim_takeoff_node.dir/rule
+geometry_msgs_generate_messages_eus: rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
-.PHONY : sim_takeoff_node
+.PHONY : geometry_msgs_generate_messages_eus
 
 # fast build rule for target.
-sim_takeoff_node/fast:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build
-.PHONY : sim_takeoff_node/fast
-
-src/sim_takeoff.o: src/sim_takeoff.cpp.o
-
-.PHONY : src/sim_takeoff.o
-
-# target to build an object file
-src/sim_takeoff.cpp.o:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.o
-.PHONY : src/sim_takeoff.cpp.o
-
-src/sim_takeoff.i: src/sim_takeoff.cpp.i
-
-.PHONY : src/sim_takeoff.i
-
-# target to preprocess a source file
-src/sim_takeoff.cpp.i:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.i
-.PHONY : src/sim_takeoff.cpp.i
-
-src/sim_takeoff.s: src/sim_takeoff.cpp.s
-
-.PHONY : src/sim_takeoff.s
-
-# target to generate assembly for a file
-src/sim_takeoff.cpp.s:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_takeoff_node.dir/build.make rb5_simulation/CMakeFiles/sim_takeoff_node.dir/src/sim_takeoff.cpp.s
-.PHONY : src/sim_takeoff.cpp.s
-
-src/sim_teleop3d.o: src/sim_teleop3d.cpp.o
-
-.PHONY : src/sim_teleop3d.o
-
-# target to build an object file
-src/sim_teleop3d.cpp.o:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.o
-.PHONY : src/sim_teleop3d.cpp.o
-
-src/sim_teleop3d.i: src/sim_teleop3d.cpp.i
-
-.PHONY : src/sim_teleop3d.i
-
-# target to preprocess a source file
-src/sim_teleop3d.cpp.i:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.i
-.PHONY : src/sim_teleop3d.cpp.i
-
-src/sim_teleop3d.s: src/sim_teleop3d.cpp.s
-
-.PHONY : src/sim_teleop3d.s
-
-# target to generate assembly for a file
-src/sim_teleop3d.cpp.s:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/sim_teleop_node.dir/build.make rb5_simulation/CMakeFiles/sim_teleop_node.dir/src/sim_teleop3d.cpp.s
-.PHONY : src/sim_teleop3d.cpp.s
->>>>>>> 2-ros-teleop
+geometry_msgs_generate_messages_eus/fast:
+	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(MAKE) -f rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rb5_simulation/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Help Target
 help:
@@ -557,44 +324,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-<<<<<<< HEAD
-	@echo "... install/local"
-	@echo "... install"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... list_install_components"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... rebuild_cache"
+	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... test"
-=======
-	@echo "... install"
-	@echo "... sim_teleop_node"
 	@echo "... install/local"
-	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... sim_takeoff_node"
-	@echo "... rebuild_cache"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... edit_cache"
-	@echo "... src/sim_takeoff.o"
-	@echo "... src/sim_takeoff.i"
-	@echo "... src/sim_takeoff.s"
-	@echo "... src/sim_teleop3d.o"
-	@echo "... src/sim_teleop3d.i"
-	@echo "... src/sim_teleop3d.s"
->>>>>>> 2-ros-teleop
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... list_install_components"
+	@echo "... install"
 .PHONY : help
 
 
@@ -606,10 +351,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-<<<<<<< HEAD
-	cd /ros_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-=======
 	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
->>>>>>> 2-ros-teleop
 .PHONY : cmake_check_build_system
 
