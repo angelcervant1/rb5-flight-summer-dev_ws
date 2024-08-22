@@ -1,5 +1,13 @@
 <launch>
-    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen">
-        <param name="camera_info_url" value="file:///ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/head_camera.yaml"/>
+
+    <arg name="camera_config_path" value="file:///ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/head_camera.yaml"/>
+
+    <!-- <node name="orb_slam_ros" pkg="orb_slam_2_ros" type="orb_slam_2_ros_mono" output="screen">
+     <param name="camera_calibration" value="$(arg camera_config_path)"/>    
+    </node> -->
+
+    <node name="camera" pkg="usb_cam" type="usb_cam_node" output="screen">
+        <!-- <remap from="/camera/image_raw" to="/camera/rgb/image_raw" /> -->
+        <param name="camera_info_url" value="$(arg camera_config_path)"/>
     </node>
 </launch>
