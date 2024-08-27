@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
+CMAKE_SOURCE_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
+CMAKE_BINARY_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/build
 
 # Utility rule file for geographic_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build: 
 .PHONY : mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
 
 mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/clean:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/clean
 
 mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/depend:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/root/rb5-flight-summer-dev_ws/rb5_flight/src /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : mavros-interface/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/depend
 

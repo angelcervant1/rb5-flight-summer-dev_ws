@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
+CMAKE_SOURCE_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
+CMAKE_BINARY_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/build
 
 # Include any dependencies generated for this target.
 include mavros-interface/CMakeFiles/mavros-interfaces_node.dir/depend.make
@@ -58,17 +58,17 @@ include mavros-interface/CMakeFiles/mavros-interfaces_node.dir/progress.make
 include mavros-interface/CMakeFiles/mavros-interfaces_node.dir/flags.make
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/flags.make
-mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o -c /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o: /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o"
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o -c /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.i"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp > CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.i
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp > CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.i
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.s"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp -o CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.s
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface/src/mavros_test_node.cpp -o CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.s
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o.requires:
 
@@ -88,50 +88,50 @@ mavros__interfaces_node_OBJECTS = \
 # External object files for target mavros-interfaces_node
 mavros__interfaces_node_EXTERNAL_OBJECTS =
 
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmavros.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libGeographic.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libdiagnostic_updater.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libeigen_conversions.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmavconn.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libclass_loader.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/libPocoFoundation.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libdl.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroslib.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librospack.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libtf2_ros.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libactionlib.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmessage_filters.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroscpp.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libxmlrpcpp.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libtf2.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librostime.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libcpp_common.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mavros-interfaces_node.dir/link.txt --verbose=$(VERBOSE)
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build.make
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmavros.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libGeographic.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libdiagnostic_updater.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libeigen_conversions.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmavconn.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libclass_loader.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/libPocoFoundation.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libdl.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroslib.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librospack.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libpython2.7.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_program_options.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libtinyxml2.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libtf2_ros.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libactionlib.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libmessage_filters.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroscpp.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libtf2.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/librostime.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node: mavros-interface/CMakeFiles/mavros-interfaces_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node"
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mavros-interfaces_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node
+mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build: /home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node
 
 .PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/build
 
@@ -140,10 +140,10 @@ mavros-interface/CMakeFiles/mavros-interfaces_node.dir/requires: mavros-interfac
 .PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/requires
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/mavros-interfaces_node.dir/cmake_clean.cmake
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/mavros-interfaces_node.dir/cmake_clean.cmake
 .PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/clean
 
 mavros-interface/CMakeFiles/mavros-interfaces_node.dir/depend:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/mavros-interfaces_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/root/rb5-flight-summer-dev_ws/rb5_flight/src /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/mavros-interfaces_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : mavros-interface/CMakeFiles/mavros-interfaces_node.dir/depend
 

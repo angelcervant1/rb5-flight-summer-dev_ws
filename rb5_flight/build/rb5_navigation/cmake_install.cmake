@@ -1,8 +1,8 @@
-# Install script for directory: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation
+# Install script for directory: /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install")
+  set(CMAKE_INSTALL_PREFIX "/home/root/rb5-flight-summer-dev_ws/rb5_flight/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rb5_navigation/cmake" TYPE FILE FILES
-    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigationConfig.cmake"
-    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigationConfig-version.cmake"
+    "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigationConfig.cmake"
+    "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/catkin_generated/installspace/rb5_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rb5_navigation" TYPE FILE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rb5_navigation" TYPE FILE FILES "/home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rb5_navigation/takeoff_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rb5_navigation" TYPE EXECUTABLE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rb5_navigation" TYPE EXECUTABLE FILES "/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rb5_navigation/takeoff_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/rb5_navigation/takeoff_node")
     file(RPATH_CHANGE

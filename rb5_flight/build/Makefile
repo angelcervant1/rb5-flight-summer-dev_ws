@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
+CMAKE_SOURCE_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
+CMAKE_BINARY_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1208,266 +1208,6 @@ nav_msgs_generate_messages_eus/fast:
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named marker_poses_server
-
-# Build rule for target.
-marker_poses_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 marker_poses_server
-.PHONY : marker_poses_server
-
-# fast build rule for target.
-marker_poses_server/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/marker_poses_server.dir/build.make natnet_ros_cpp/CMakeFiles/marker_poses_server.dir/build
-.PHONY : marker_poses_server/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp
-
-# Build rule for target.
-natnet_ros_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp
-.PHONY : natnet_ros_cpp
-
-# fast build rule for target.
-natnet_ros_cpp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp.dir/build
-.PHONY : natnet_ros_cpp/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages
-.PHONY : natnet_ros_cpp_generate_messages
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages.dir/build
-.PHONY : natnet_ros_cpp_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages_nodejs
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages_nodejs
-.PHONY : natnet_ros_cpp_generate_messages_nodejs
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages_nodejs/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_nodejs.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_nodejs.dir/build
-.PHONY : natnet_ros_cpp_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_py
-
-# Build rule for target.
-visualization_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_lisp
-
-# Build rule for target.
-visualization_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_nodejs
-
-# Build rule for target.
-visualization_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages_lisp
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages_lisp
-.PHONY : natnet_ros_cpp_generate_messages_lisp
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages_lisp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_lisp.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_lisp.dir/build
-.PHONY : natnet_ros_cpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_cpp
-
-# Build rule for target.
-visualization_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_cpp
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages_eus
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages_eus
-.PHONY : natnet_ros_cpp_generate_messages_eus
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages_eus/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_eus.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_eus.dir/build
-.PHONY : natnet_ros_cpp_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_genpy
-
-# Build rule for target.
-natnet_ros_cpp_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_genpy
-.PHONY : natnet_ros_cpp_genpy
-
-# fast build rule for target.
-natnet_ros_cpp_genpy/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_genpy.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_genpy.dir/build
-.PHONY : natnet_ros_cpp_genpy/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_eus
-
-# Build rule for target.
-visualization_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
-.PHONY : visualization_msgs_generate_messages_eus
-
-# fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make natnet_ros_cpp/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named _natnet_ros_cpp_generate_messages_check_deps_MarkerPoses
-
-# Build rule for target.
-_natnet_ros_cpp_generate_messages_check_deps_MarkerPoses: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _natnet_ros_cpp_generate_messages_check_deps_MarkerPoses
-.PHONY : _natnet_ros_cpp_generate_messages_check_deps_MarkerPoses
-
-# fast build rule for target.
-_natnet_ros_cpp_generate_messages_check_deps_MarkerPoses/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/_natnet_ros_cpp_generate_messages_check_deps_MarkerPoses.dir/build.make natnet_ros_cpp/CMakeFiles/_natnet_ros_cpp_generate_messages_check_deps_MarkerPoses.dir/build
-.PHONY : _natnet_ros_cpp_generate_messages_check_deps_MarkerPoses/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages_cpp
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages_cpp
-.PHONY : natnet_ros_cpp_generate_messages_cpp
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages_cpp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_cpp.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_cpp.dir/build
-.PHONY : natnet_ros_cpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_gencpp
-
-# Build rule for target.
-natnet_ros_cpp_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_gencpp
-.PHONY : natnet_ros_cpp_gencpp
-
-# fast build rule for target.
-natnet_ros_cpp_gencpp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_gencpp.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_gencpp.dir/build
-.PHONY : natnet_ros_cpp_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_genlisp
-
-# Build rule for target.
-natnet_ros_cpp_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_genlisp
-.PHONY : natnet_ros_cpp_genlisp
-
-# fast build rule for target.
-natnet_ros_cpp_genlisp/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_genlisp.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_genlisp.dir/build
-.PHONY : natnet_ros_cpp_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_gennodejs
-
-# Build rule for target.
-natnet_ros_cpp_gennodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_gennodejs
-.PHONY : natnet_ros_cpp_gennodejs
-
-# fast build rule for target.
-natnet_ros_cpp_gennodejs/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_gennodejs.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_gennodejs.dir/build
-.PHONY : natnet_ros_cpp_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_geneus
-
-# Build rule for target.
-natnet_ros_cpp_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_geneus
-.PHONY : natnet_ros_cpp_geneus
-
-# fast build rule for target.
-natnet_ros_cpp_geneus/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_geneus.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_geneus.dir/build
-.PHONY : natnet_ros_cpp_geneus/fast
-
-#=============================================================================
-# Target rules for targets named natnet_ros_cpp_generate_messages_py
-
-# Build rule for target.
-natnet_ros_cpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 natnet_ros_cpp_generate_messages_py
-.PHONY : natnet_ros_cpp_generate_messages_py
-
-# fast build rule for target.
-natnet_ros_cpp_generate_messages_py/fast:
-	$(MAKE) -f natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_py.dir/build.make natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_py.dir/build
-.PHONY : natnet_ros_cpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named teleop_ros_node
-
-# Build rule for target.
-teleop_ros_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 teleop_ros_node
-.PHONY : teleop_ros_node
-
-# fast build rule for target.
-teleop_ros_node/fast:
-	$(MAKE) -f rb5_navigation/CMakeFiles/teleop_ros_node.dir/build.make rb5_navigation/CMakeFiles/teleop_ros_node.dir/build
-.PHONY : teleop_ros_node/fast
-
-#=============================================================================
 # Target rules for targets named tf_generate_messages_eus
 
 # Build rule for target.
@@ -1651,26 +1391,6 @@ help:
 	@echo "... mavros_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... marker_poses_server"
-	@echo "... natnet_ros_cpp"
-	@echo "... natnet_ros_cpp_generate_messages"
-	@echo "... natnet_ros_cpp_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... natnet_ros_cpp_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... natnet_ros_cpp_generate_messages_eus"
-	@echo "... natnet_ros_cpp_genpy"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... _natnet_ros_cpp_generate_messages_check_deps_MarkerPoses"
-	@echo "... natnet_ros_cpp_generate_messages_cpp"
-	@echo "... natnet_ros_cpp_gencpp"
-	@echo "... natnet_ros_cpp_genlisp"
-	@echo "... natnet_ros_cpp_gennodejs"
-	@echo "... natnet_ros_cpp_geneus"
-	@echo "... natnet_ros_cpp_generate_messages_py"
-	@echo "... teleop_ros_node"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_py"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mavros-interfaces_node.dir/src/mavros_test_node.cpp.o"
-  "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node.pdb"
-  "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node"
+  "/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node.pdb"
+  "/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/mavros-interfaces/mavros-interfaces_node"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/optitrack-vrpn
+# Install script for directory: /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/optitrack-vrpn
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install")
+  set(CMAKE_INSTALL_PREFIX "/home/root/rb5-flight-summer-dev_ws/rb5_flight/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpn.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpn.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/optitrack-vrpn/cmake" TYPE FILE FILES
-    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpnConfig.cmake"
-    "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpnConfig-version.cmake"
+    "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpnConfig.cmake"
+    "/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/optitrack-vrpn/catkin_generated/installspace/optitrack-vrpnConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/optitrack-vrpn" TYPE FILE FILES "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/optitrack-vrpn/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/optitrack-vrpn" TYPE FILE FILES "/home/root/rb5-flight-summer-dev_ws/rb5_flight/src/optitrack-vrpn/package.xml")
 endif()
 

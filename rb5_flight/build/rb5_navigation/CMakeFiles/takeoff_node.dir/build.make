@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
+CMAKE_SOURCE_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
+CMAKE_BINARY_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/build
 
 # Include any dependencies generated for this target.
 include rb5_navigation/CMakeFiles/takeoff_node.dir/depend.make
@@ -58,17 +58,17 @@ include rb5_navigation/CMakeFiles/takeoff_node.dir/progress.make
 include rb5_navigation/CMakeFiles/takeoff_node.dir/flags.make
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o: rb5_navigation/CMakeFiles/takeoff_node.dir/flags.make
-rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o -c /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
+rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o: /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o"
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o -c /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/takeoff_node.dir/src/offb_node.cpp.i"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp > CMakeFiles/takeoff_node.dir/src/offb_node.cpp.i
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp > CMakeFiles/takeoff_node.dir/src/offb_node.cpp.i
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp -o CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp -o CMakeFiles/takeoff_node.dir/src/offb_node.cpp.s
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o.requires:
 
@@ -88,40 +88,40 @@ takeoff_node_OBJECTS = \
 # External object files for target takeoff_node
 takeoff_node_EXTERNAL_OBJECTS =
 
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/build.make
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf_conversions.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libkdl_conversions.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf2_ros.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libactionlib.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libmessage_filters.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libroscpp.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libxmlrpcpp.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf2.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librostime.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libcpp_common.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node"
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/takeoff_node.dir/link.txt --verbose=$(VERBOSE)
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/src/offb_node.cpp.o
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/build.make
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf_conversions.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libkdl_conversions.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf2_ros.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libactionlib.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libmessage_filters.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libroscpp.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libtf2.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_regex.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/librostime.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_system.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_thread.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_chrono.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_date_time.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libboost_atomic.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node: rb5_navigation/CMakeFiles/takeoff_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node"
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/takeoff_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rb5_navigation/CMakeFiles/takeoff_node.dir/build: /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node
+rb5_navigation/CMakeFiles/takeoff_node.dir/build: /home/root/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/rb5_navigation/takeoff_node
 
 .PHONY : rb5_navigation/CMakeFiles/takeoff_node.dir/build
 
@@ -130,10 +130,10 @@ rb5_navigation/CMakeFiles/takeoff_node.dir/requires: rb5_navigation/CMakeFiles/t
 .PHONY : rb5_navigation/CMakeFiles/takeoff_node.dir/requires
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/clean:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && $(CMAKE_COMMAND) -P CMakeFiles/takeoff_node.dir/cmake_clean.cmake
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation && $(CMAKE_COMMAND) -P CMakeFiles/takeoff_node.dir/cmake_clean.cmake
 .PHONY : rb5_navigation/CMakeFiles/takeoff_node.dir/clean
 
 rb5_navigation/CMakeFiles/takeoff_node.dir/depend:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/takeoff_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/root/rb5-flight-summer-dev_ws/rb5_flight/src /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation /home/root/rb5-flight-summer-dev_ws/rb5_flight/build /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/rb5_navigation/CMakeFiles/takeoff_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rb5_navigation/CMakeFiles/takeoff_node.dir/depend
 

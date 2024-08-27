@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src
+CMAKE_SOURCE_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build
+CMAKE_BINARY_DIR = /home/root/rb5-flight-summer-dev_ws/rb5_flight/build
 
 # Utility rule file for nav_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/build: nav_msgs_ge
 .PHONY : mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 
 mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/depend:
-	cd /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/root/rb5-flight-summer-dev_ws/rb5_flight/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/root/rb5-flight-summer-dev_ws/rb5_flight/src /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface /home/root/rb5-flight-summer-dev_ws/rb5_flight/build/mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : mavros-interface/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
 

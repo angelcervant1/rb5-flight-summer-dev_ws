@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/root/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
+ros/ros.h
+-
+geometry_msgs/PoseStamped.h
+-
+mavros_msgs/CommandBool.h
+-
+mavros_msgs/SetMode.h
+-
+mavros_msgs/State.h
+-
+signal.h
+-
+
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string
 -
@@ -852,19 +866,5 @@ string
 vector
 -
 time.h
--
-
-/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/src/offb_node.cpp
-ros/ros.h
--
-geometry_msgs/PoseStamped.h
--
-mavros_msgs/CommandBool.h
--
-mavros_msgs/SetMode.h
--
-mavros_msgs/State.h
--
-signal.h
 -
 

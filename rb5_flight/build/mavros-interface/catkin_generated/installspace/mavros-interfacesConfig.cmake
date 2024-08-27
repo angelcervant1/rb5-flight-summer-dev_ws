@@ -67,14 +67,14 @@ set(mavros-interfaces_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mavros-interfaces_SOURCE_PREFIX /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface)
-  set(mavros-interfaces_DEVEL_PREFIX /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel)
+  set(mavros-interfaces_SOURCE_PREFIX /home/root/rb5-flight-summer-dev_ws/rb5_flight/src/mavros-interface)
+  set(mavros-interfaces_DEVEL_PREFIX /home/root/rb5-flight-summer-dev_ws/rb5_flight/devel)
   set(mavros-interfaces_INSTALL_PREFIX "")
   set(mavros-interfaces_PREFIX ${mavros-interfaces_DEVEL_PREFIX})
 else()
   set(mavros-interfaces_SOURCE_PREFIX "")
   set(mavros-interfaces_DEVEL_PREFIX "")
-  set(mavros-interfaces_INSTALL_PREFIX /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install)
+  set(mavros-interfaces_INSTALL_PREFIX /home/root/rb5-flight-summer-dev_ws/rb5_flight/install)
   set(mavros-interfaces_PREFIX ${mavros-interfaces_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/root/rb5-flight-summer-dev_ws/rb5_flight/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,4 +1,4 @@
-prefix=/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install
+prefix=/home/root/rb5-flight-summer-dev_ws/rb5_flight/install
 
 Name: rb5_simulation
 Description: Description of rb5_simulation

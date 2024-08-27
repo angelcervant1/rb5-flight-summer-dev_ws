@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/install")
+  set(CMAKE_INSTALL_PREFIX "/home/root/rb5-flight-summer-dev_ws/rb5_flight/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/ros_ws/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/googlemock/gtest/cmake_install.cmake")
+  include("/home/root/rb5-flight-summer-dev_ws/rb5_flight/build/gtest/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

@@ -21,7 +21,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-find_package(Curses REQUIRED)
+#find_package(Curses REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -42,14 +42,14 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
-  ${CURSES_INCLUDE_DIR}
+  #${CURSES_INCLUDE_DIR}
 )
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(takeoff_node src/offb_node.cpp)
-add_executable(teleop_ros_node src/teleop3d.cpp)
+#add_executable(teleop_ros_node src/teleop3d.cpp)
 add_executable(position_node src/positionPub.cpp)
 
 
@@ -57,17 +57,17 @@ add_executable(position_node src/positionPub.cpp)
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 add_dependencies(takeoff_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(teleop_ros_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(teleop_ros_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(position_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(takeoff_node
   ${catkin_LIBRARIES}
 )
-target_link_libraries(teleop_ros_node
-  ${catkin_LIBRARIES}
-  ${CURSES_LIBRARIES}
-)
+#target_link_libraries(teleop_ros_node
+  #${catkin_LIBRARIES}
+  #${CURSES_LIBRARIES}
+#)
 target_link_libraries(position_node
   ${catkin_LIBRARIES}
 )
