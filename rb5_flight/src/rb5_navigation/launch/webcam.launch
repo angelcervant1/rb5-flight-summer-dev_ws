@@ -10,4 +10,6 @@
         <!-- <remap from="/camera/image_raw" to="/camera/rgb/image_raw" /> -->
         <param name="camera_info_url" value="$(arg camera_config_path)"/>
     </node>
+
+    
 </launch>

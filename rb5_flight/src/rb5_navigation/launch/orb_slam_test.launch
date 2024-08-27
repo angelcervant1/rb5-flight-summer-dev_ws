@@ -1,0 +1,17 @@
+<launch>
+    <!-- LAUNCH ORB SLAM NODE FOR MONOCULAR CAMERA -->
+    <include file="$(find orb_slam2_ros)/ros/launch/orb_slam2_r200_mono.launch"/>
+
+    <!-- Node to publish camera info -->
+    <node name="camera_info" pkg="rb5_navigation" type="camera_info.py" output="screen">
+        <param name="camera_config_path" value="file:///ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/rb5_drone_tracking_cam_conf.yaml"/>
+    </node>
+
+    <!-- <node name="image_republisher" pkg="topic_tools" type="relay" output="screen">
+        <remap from="in" to="/tracking"/>
+        <remap from="out" to="/camera/image_raw"/>
+    </node> -->
+
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/orb_slam_rb5.rviz"/>
+</launch>
+
