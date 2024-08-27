@@ -3,7 +3,7 @@ header:
   stamp:
     secs: 0
     nsecs: 0
-  frame_id: "camera_frame"
+  frame_id: "camera_link"
 
 height: 480
 width: 640
