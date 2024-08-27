@@ -28,6 +28,7 @@ def publish_camera_info(yaml_file):
     while not rospy.is_shutdown():
         camera_info = load_camera_info(yaml_file)
         pub.publish(camera_info)
+        
         rate.sleep()
 
 if __name__ == '__main__':

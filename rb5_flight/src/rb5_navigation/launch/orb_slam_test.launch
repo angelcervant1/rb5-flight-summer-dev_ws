@@ -10,8 +10,8 @@
     <!-- <node name="image_republisher" pkg="topic_tools" type="relay" output="screen">
         <remap from="in" to="/tracking"/>
         <remap from="out" to="/camera/image_raw"/>
-    </node> -->
-
+    </node > -->
+ 
     <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/src/rb5_navigation/config/orb_slam_rb5.rviz"/>
 </launch>
 
