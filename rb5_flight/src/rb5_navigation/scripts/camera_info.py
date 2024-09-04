@@ -23,7 +23,7 @@ def load_camera_info(yaml_file):
 def publish_camera_info(yaml_file):
     rospy.init_node('camera_info_publisher', anonymous=True)
     pub = rospy.Publisher('/camera/camera_info', CameraInfo, queue_size=10)
-    rate = rospy.Rate(10)  # 10 Hz
+    rate = rospy.Rate(10)  
 
     while not rospy.is_shutdown():
         camera_info = load_camera_info(yaml_file)

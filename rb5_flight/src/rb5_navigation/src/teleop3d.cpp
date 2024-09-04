@@ -95,7 +95,7 @@ private:
                     last_request = ros::Time::now();
                 }
             }
-
+            pose.header.stamp = ros::Time::now();
             local_pos_pub.publish(pose);
 
             // 10 seconds till the teleop node overrides the takeoff routine
@@ -217,7 +217,7 @@ TeleopDrone* TeleopDrone::teleop_instance = nullptr;
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "position_publisher");
+    ros::init(argc, argv, "teleop_ros_node");
     TeleopDrone teleop;
     ros::spin(); 
     return 0;
