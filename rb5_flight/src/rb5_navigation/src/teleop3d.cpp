@@ -16,11 +16,11 @@ public:
         teleop_instance = this;  
         signal(SIGINT, signalHandler);  
 
-        cmd_vel_pub_ = nh.advertise<geometry_msgs::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
-        state_sub = nh.subscribe<mavros_msgs::State>("mavros/state", 10, &TeleopDrone::state_cb, this);
-        local_pos_pub = nh.advertise<geometry_msgs::PoseStamped> ("mavros/setpoint_position/local", 10);
-        arming_client = nh.serviceClient<mavros_msgs::CommandBool>("mavros/cmd/arming");
-        set_mode_client = nh.serviceClient<mavros_msgs::SetMode>("mavros/set_mode");
+        cmd_vel_pub_ = nh.advertise<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 10);
+        state_sub = nh.subscribe<mavros_msgs::State>("/mavros/state", 10, &TeleopDrone::state_cb, this);
+        local_pos_pub = nh.advertise<geometry_msgs::PoseStamped> ("/mavros/setpoint_position/local", 10);
+        arming_client = nh.serviceClient<mavros_msgs::CommandBool>("/mavros/cmd/arming");
+        set_mode_client = nh.serviceClient<mavros_msgs::SetMode>("/mavros/set_mode");
         takeoff();
         startControlLoop();
     }
@@ -66,7 +66,7 @@ private:
         pose.header.frame_id = "map";
         pose.pose.position.x = 0;
         pose.pose.position.y = 0;
-        pose.pose.position.z = 2.0;
+        pose.pose.position.z = 1.0;
 
 
         mavros_msgs::SetMode offb_set_mode;

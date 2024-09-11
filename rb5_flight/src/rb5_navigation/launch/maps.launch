@@ -1,0 +1,13 @@
+<launch>
+  <node name="map_server1" pkg="map_server" type="map_server" args="$(find rb5_navigation)/config/maps/map_config/my_map1.yaml">
+    <remap from="/map" to="/map1"/>
+  </node>
+
+  <node name="map_server2" pkg="map_server" type="map_server" args="$(find rb5_navigation)/config/maps/map_config/my_map2.yaml">
+    <remap from="/map" to="/map2"/>
+  </node>
+
+  <node name="map_server3" pkg="map_server" type="map_server" args="$(find rb5_navigation)/config/maps/map_config/my_map3.yaml">
+    <remap from="/map" to="/map3"/>
+  </node>
+</launch>

@@ -2,4 +2,7 @@
 <launch>
     <node name="teleop_ros_node" pkg="rb5_navigation" type="teleop_ros_node" output="screen"/>
     <node name="position_publisher" pkg="rb5_navigation" type="position_node" output="screen"/>
+
+    <!-- CAMERA CAPTURE SERVICE -->
+    <node name="camera_snapshot" pkg="rb5_navigation" type="image_capture.py" output="screen"/>
 </launch>
