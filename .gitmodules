@@ -1,4 +1,0 @@
-[submodule "natnet_ros_cpp"]
-  path = rb5/flight/src/natnet_ros_cpp
-  url = https://github.com/L2S-lab/natnet_ros_cpp.git
-
