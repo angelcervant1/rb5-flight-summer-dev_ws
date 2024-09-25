@@ -1,11 +1,18 @@
 # Hashes of file build rules.
 071c805a31516a7c03e07ff26a5c126d /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/include/natnet_ros_cpp/MarkerPoses.h
+997a4bee2628d15a5c08a4e56a622667 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/include/rb5_navigation/ImageWithCentroids.h
 95f06f42c74d19849d6bea612160a6d9 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/python2.7/dist-packages/natnet_ros_cpp/srv/_MarkerPoses.py
 928836be09413fa7f8ee7580cf7d1a62 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/python2.7/dist-packages/natnet_ros_cpp/srv/__init__.py
+c10eb7431e365a63364119a4ba677365 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/python2.7/dist-packages/rb5_navigation/msg/_ImageWithCentroids.py
+fcd1b4df72ceeb773c23a13e06813842 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/lib/python2.7/dist-packages/rb5_navigation/msg/__init__.py
 6f0ff098269aa0e36490c103475d6c0d /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/common-lisp/ros/natnet_ros_cpp/srv/MarkerPoses.lisp
+151b0bd5391cede36b3e57a6db144f97 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/common-lisp/ros/rb5_navigation/msg/ImageWithCentroids.lisp
 5942bccfdfb15e1b82876a21432102ca /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/gennodejs/ros/natnet_ros_cpp/srv/MarkerPoses.js
+c0e50417e60451918a1895098b0c1ade /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/gennodejs/ros/rb5_navigation/msg/ImageWithCentroids.js
 dea3e28d1fce0713846780b432226b2f /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/roseus/ros/natnet_ros_cpp/manifest.l
 cd866cb4874362d20642474f11fc0fdf /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/roseus/ros/natnet_ros_cpp/srv/MarkerPoses.l
+5af285cfc44785088fa2289b2203c517 /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/roseus/ros/rb5_navigation/manifest.l
+0ba32eceee4474351800279d88d07e8c /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/devel/share/roseus/ros/rb5_navigation/msg/ImageWithCentroids.l
 357da0075ea04499463e842bdcc3c5fe CMakeFiles/clean_test_results
 9bb2730a349db7d3ae28b5b2ec2abe71 natnet_ros_cpp/CMakeFiles/_natnet_ros_cpp_generate_messages_check_deps_MarkerPoses
 99c5c36695ad0f66348fdbb958b94cb4 natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_cpp
@@ -13,3 +20,5 @@ cd866cb4874362d20642474f11fc0fdf /ros_ws/rb5-flight-summer-dev_ws/rb5_flight/dev
 99c5c36695ad0f66348fdbb958b94cb4 natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_lisp
 99c5c36695ad0f66348fdbb958b94cb4 natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_nodejs
 99c5c36695ad0f66348fdbb958b94cb4 natnet_ros_cpp/CMakeFiles/natnet_ros_cpp_generate_messages_py
+c3d93b926a069987823caf9bfd0356c6 rb5_navigation/CMakeFiles/rb5_navigation_generate_messages_eus
+c3d93b926a069987823caf9bfd0356c6 rb5_navigation/CMakeFiles/rb5_navigation_generate_messages_py

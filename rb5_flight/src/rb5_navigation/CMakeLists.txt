@@ -17,8 +17,25 @@ find_package(catkin REQUIRED COMPONENTS
   tf2_ros
   tf2
   tf_conversions
+  sensor_msgs
+  message_generation
 )
-
+#add_message_files(
+ # FILES
+  #ImageWithCentroids.msg
+#)
+generate_messages(
+  DEPENDENCIES
+  sensor_msgs#   std_msgs
+  std_msgs
+  geometry_msgs
+)
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES depth_estimator
+ CATKIN_DEPENDS rospy sensor_msgs std_msgs tf tf2_ros message_runtime std_msgs sensor_msgs geometry_msgs
+#  DEPENDS system_lib
+)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 find_package(Curses REQUIRED)
@@ -29,7 +46,7 @@ find_package(Curses REQUIRED)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rb5_navigation
-  CATKIN_DEPENDS geometry_msgs mavros_msgs nav_msgs roscpp rospy std_msgs tf2_ros tf_conversions
+  CATKIN_DEPENDS geometry_msgs mavros_msgs nav_msgs roscpp rospy std_msgs tf2_ros tf_conversions message_runtime sensor_msgs
 #  DEPENDS system_lib
 )
 

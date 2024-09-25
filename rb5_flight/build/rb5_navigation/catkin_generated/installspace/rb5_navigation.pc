@@ -5,4 +5,4 @@ Description: Description of rb5_navigation
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: geometry_msgs mavros_msgs nav_msgs roscpp rospy std_msgs tf2_ros tf_conversions
+Requires: geometry_msgs mavros_msgs nav_msgs roscpp rospy std_msgs tf2_ros tf_conversions message_runtime sensor_msgs
