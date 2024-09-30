@@ -5,10 +5,10 @@ This repository provides a collection of ROS packages to control the Qualcomm RB
 
 ### Key Features
 
-    Real-time Drone Control: Manual teleoperation of the RB5 drone via keyboard or joystick.
-    Simulation Support: Test and simulate drone behavior and navigation using Gazebo.
-    Visual SLAM Integration (Experimental): Initial support for autonomous navigation using Visual SLAM techniques.
-    MoCap System Integration: Leverage external motion capture systems (like OptiTrack) for precise, real-time localization and positioning.
+- Real-time Drone Control: Manual teleoperation of the RB5 drone via keyboard or joystick.
+- Simulation Support: Test and simulate drone behavior and navigation using Gazebo.
+- Visual SLAM Integration (Experimental): Initial support for autonomous navigation using Visual SLAM techniques.
+- MoCap System Integration: Leverage external motion capture systems (like OptiTrack) for precise, real-time localization and positioning.
 
 ### Compatibility
 
