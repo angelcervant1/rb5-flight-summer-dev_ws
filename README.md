@@ -43,7 +43,7 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 
 3.- Add the target rigid bodies to be streamed over.
 
-## Dynamic ip address
+### Dynamic ip address
 To resolve the "Server not connected error" it is needed to run the following command on a terminal:
 ```bash
 sudo ip addr add 192.168.137.91/24 dev wlp2s0
