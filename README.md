@@ -30,6 +30,24 @@ This repository provides a set of 4 ROS packages for the following purposes resp
 
 This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.04, ensuring stable operation with the Qualcomm RB5 Drone hardware.
 
+## Configuration
+
+### MAVROS Setup
+
+
+### OptiTrack Setup
+
+1.- Connect both Optitrack and Host computer to the same network.
+2.- Make sure that multicast and streaming are enabled on the Motive Final Software.
+3.- Add the target rigid bodies to be streamed over.
+
+## Dynamic ip address
+To resolve the "Server not connected error" it is needed to run the following command on a terminal:
+```bash
+sudo ip addr add 192.168.137.91/24 dev wlp2s0
+```
+The previous command will add your host computer temporarily to the OptiTrack subnet. (Typically 192.168.137.xx)
+
 ## Further Documentation and Support
 
 - [MAVROS](http://wiki.ros.org/mavros) Documentation for insights on MAVLink communication with ROS.
