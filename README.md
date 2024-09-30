@@ -43,6 +43,10 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 
 3.- Add the target rigid bodies to be streamed over.
 
+4.- Source the ws and launch the NatNet Client with `roslaunch natnet_ros_cpp natnet_ros.launch`
+
+5.- If no errors were encountered you should be receiving the real-time pose of the rigid bodies as a `PoseStamped` message. Run `rostopic list` and look for your Rigid Body namespace.
+
 ### Dynamic ip address
 To resolve the "Server not connected error" it is needed to run the following command on a terminal:
 ```bash
