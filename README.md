@@ -11,7 +11,7 @@ This repository is ideal if you’re looking to:
 
 ## Overview
 
-This repository provides a robust set of ROS packages for controlling the Qualcomm RB5 Drone in both simulation and real-world testing environments. The motion control packages utilize MAVROS for interfacing with the drone’s flight controller, leveraging the drone's full feature set. Additionally, OptiTrack Motion Capture (MoCap) support has been integrated for real-time pose tracking, offering enhanced localization precision during field tests.
+This repository provides a set of ROS packages for controlling the Qualcomm RB5 Drone in both simulation and real-world testing environments. The motion control packages utilize a [MAVROS](http://wiki.ros.org/mavros) wrapper for interfacing with the drone’s flight controller, leveraging the drone's full feature set. Additionally, OptiTrack Motion Capture (MoCap) support has been integrated for real-time pose tracking, offering enhanced localization precision during field tests.
 
 ## Key Features
 
