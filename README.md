@@ -38,7 +38,9 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 ### OptiTrack Setup
 
 1.- Connect both Optitrack and Host computer to the same network.
+
 2.- Make sure that multicast and streaming are enabled on the Motive Final Software.
+
 3.- Add the target rigid bodies to be streamed over.
 
 ## Dynamic ip address
