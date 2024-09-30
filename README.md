@@ -28,3 +28,10 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 ## Docker Support
 
 The repository includes a Dockerfile, making it easy to build a containerized ROS environment. This ensures consistency and ease of use, providing a ready-to-go development environment without the hassle of manual setup.
+
+## Further Documentation and Support
+
+- [MAVROS]([https://optitrack.com/](http://wiki.ros.org/mavros)) Documentation for insights on MAVLink communication with ROS.
+- [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) Documentation for general ROS usage and troubleshooting.
+- [OptiTrack](https://optitrack.com/) Documentation for details on setting up the motion capture system.
+- [NatNet ROS](https://github.com/L2S-lab/natnet_ros_cpp) Client/Server Documentation to integrate OptiTrack multicast with ROS.
