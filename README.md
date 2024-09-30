@@ -40,3 +40,5 @@ The repository includes a Dockerfile, making it easy to build a containerized RO
 - [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu) Documentation for general ROS usage and troubleshooting.
 - [OptiTrack](https://optitrack.com/) Documentation for details on setting up the motion capture system.
 - [NatNet ROS](https://github.com/L2S-lab/natnet_ros_cpp) Client/Server Documentation to integrate OptiTrack multicast with ROS.
+
+# Should you have any other doubt on how to run and configurate the environment. Feel free to open an issue about it.
