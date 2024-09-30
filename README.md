@@ -1,5 +1,6 @@
-ROS Packages for Operating the Qualcomm RB5 Drone
-Is This Repository Right for You?
+# ROS Packages for Operating the Qualcomm RB5 Drone
+
+## Is This Repository Right for You?
 
 This repository is ideal if you’re looking to:
 
@@ -8,10 +9,11 @@ This repository is ideal if you’re looking to:
   - Use OptiTrack Motion Capture for real-time pose tracking and high-precision localization.
   - Simulate and validate motion planning algorithms in a controlled environment using Gazebo.
 
-Overview
+## Overview
 
 This repository provides a robust set of ROS packages for controlling the Qualcomm RB5 Drone in both simulation and real-world testing environments. The motion control packages utilize MAVROS for interfacing with the drone’s flight controller, leveraging the drone's full feature set. Additionally, OptiTrack Motion Capture (MoCap) support has been integrated for real-time pose tracking, offering enhanced localization precision during field tests.
-Key Features
+
+## Key Features
 
   - Real-time Drone Control: Manual teleoperation using a keyboard or joystick for full control of the RB5 drone.
   - Simulation Support: Easily test and simulate the drone’s behavior, navigation, and motion planning within the Gazebo simulation environment.
@@ -19,9 +21,10 @@ Key Features
   - MoCap System Integration: Leverage OptiTrack or other motion capture systems for highly accurate, real-time pose tracking and localization.
   
 
-Compatibility
+## Compatibility
 
 This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.04, ensuring stable operation with the Qualcomm RB5 Drone hardware.
-Docker Support
+
+## Docker Support
 
 The repository includes a Dockerfile, making it easy to build a containerized ROS environment. This ensures consistency and ease of use, providing a ready-to-go development environment without the hassle of manual setup.
