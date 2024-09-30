@@ -30,10 +30,6 @@ This repository provides a set of 4 ROS packages for the following purposes resp
 
 This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.04, ensuring stable operation with the Qualcomm RB5 Drone hardware.
 
-## Docker Support
-
-The repository includes a Dockerfile, making it easy to build a containerized ROS environment. This ensures consistency and ease of use, providing a ready-to-go development environment without the hassle of manual setup.
-
 ## Further Documentation and Support
 
 - [MAVROS](http://wiki.ros.org/mavros) Documentation for insights on MAVLink communication with ROS.
