@@ -1,18 +1,27 @@
-# Ros Packages to operate the Qualcomm RB5 Drone 
+ROS Packages for Operating the Qualcomm RB5 Drone
+Is This Repository Right for You?
 
-## Overview
-This repository provides a collection of ROS packages to control the Qualcomm RB5 Drone both in simulation and in real-world testing. The drone operates via the MAVLink protocol, enabling seamless communication between ROS and the drone's flight controller using MAVROS. A MoCap system (OptiTrack) was also considered within the development of this packages. 
+This repository is ideal if you’re looking to:
 
-### Key Features
+  - Teleoperate the RB5 Drone using your own keyboard or joystick.
+  - Integrate a Visual SLAM solution for autonomous navigation.
+  - Use OptiTrack Motion Capture for real-time pose tracking and high-precision localization.
+  - Simulate and validate motion planning algorithms in a controlled environment using Gazebo.
 
-- Real-time Drone Control: Manual teleoperation of the RB5 drone via keyboard or joystick.
-- Simulation Support: Test and simulate drone behavior and navigation using Gazebo.
-- Visual SLAM Integration (Experimental): Initial support for autonomous navigation using Visual SLAM techniques.
-- MoCap System Integration: Leverage external motion capture systems (like OptiTrack) for precise, real-time localization and positioning.
+Overview
 
-### Compatibility
+This repository provides a robust set of ROS packages for controlling the Qualcomm RB5 Drone in both simulation and real-world testing environments. The motion control packages utilize MAVROS for interfacing with the drone’s flight controller, leveraging the drone's full feature set. Additionally, OptiTrack Motion Capture (MoCap) support has been integrated for real-time pose tracking, offering enhanced localization precision during field tests.
+Key Features
 
-This ROS environment has been developed and tested on ROS Melodic and Ubuntu 18.04 to ensure stable operation with the Qualcomm RB5 Drone.
+  - Real-time Drone Control: Manual teleoperation using a keyboard or joystick for full control of the RB5 drone.
+  - Simulation Support: Easily test and simulate the drone’s behavior, navigation, and motion planning within the Gazebo simulation environment.
+  - Visual SLAM Integration (Experimental): Incorporates initial support for autonomous navigation using Visual SLAM techniques, helping to enable mapping and localization in unknown environments.
+  - MoCap System Integration: Leverage OptiTrack or other motion capture systems for highly accurate, real-time pose tracking and localization.
+  
+
+Compatibility
+
+This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.04, ensuring stable operation with the Qualcomm RB5 Drone hardware.
 Docker Support
 
-The repository includes a Dockerfile, allowing users to easily build a Docker image to run the ROS environment in a containerized setup. This simplifies the development process by providing a consistent and reproducible environment.
+The repository includes a Dockerfile, making it easy to build a containerized ROS environment. This ensures consistency and ease of use, providing a ready-to-go development environment without the hassle of manual setup.
