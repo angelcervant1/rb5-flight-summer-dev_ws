@@ -32,6 +32,7 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 
 ## Configuration
 
+
 ### MAVROS Setup
 
 
