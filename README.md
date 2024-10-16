@@ -62,4 +62,4 @@ The previous command will add your host computer temporarily to the OptiTrack su
 - [OptiTrack](https://optitrack.com/) Documentation for details on setting up the motion capture system.
 - [NatNet ROS](https://github.com/L2S-lab/natnet_ros_cpp) Client/Server Documentation to integrate OptiTrack multicast with ROS.
 
-## If you have any further questions on how to run or configure the environment, feel free to open an issue.
+## If you have any further questions on how to run or configure the environment, feel free to open an issue .
