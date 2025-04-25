@@ -1,6 +1,6 @@
-# ROS Packages for Operating the Qualcomm RB5 Drone
+# Development of ROS Packages for Operating the Qualcomm RB5 Drone in a collaboration with the University of Ottawa
 
-# This project was worked in a collaboration with the university of ottawa
+ 
 
 I directed the development a comprehensive ROS-based workspace tailored for the Qualcomm RB5 drone platform, focusing on visual servoing and autonomous navigation. This project encompasses four key ROS packages:
 
