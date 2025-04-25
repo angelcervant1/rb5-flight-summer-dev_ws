@@ -3,22 +3,19 @@
 # This project was worked in a collaboration with the university of ottawa
 ## Is This Repository Right for You?
 
-This repository is ideal if you’re looking to:
+Developed a comprehensive ROS-based workspace tailored for the Qualcomm RB5 drone platform, focusing on visual servoing and autonomous navigation. This project encompasses four key ROS packages:
 
-  - Teleoperate the RB5 Drone using your own keyboard or joystick.
-  - Integrate a Visual SLAM solution for autonomous navigation.
-  - Use OptiTrack Motion Capture for real-time pose tracking and high-precision localization.
-  - Simulate and validate motion planning algorithms in a controlled environment using Gazebo.
 
 ## Overview
 
 This repository provides a set of 4 ROS packages for the following purposes respectively: 
 
-- MAVROS Interface
-- OptiTrack Interface
-- Navigation
-- Simulation
-  
+- MAVROS Interface: Teleoperate the RB5 Drone using your own keyboard or joystick.
+- OptiTrack Interface: Use OptiTrack Motion Capture for real-time pose tracking and high-precision localization.
+- Navigation: Integrate a Visual SLAM solution for autonomous navigation.
+- Simulation:  Simulate and validate motion planning algorithms in a controlled environment using Gazebo SIL.
+
+
 ## Key Features
 
   - Real-time Drone Control: Manual teleoperation using a keyboard or joystick for full control of the RB5 drone.
