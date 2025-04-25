@@ -1,5 +1,6 @@
 # ROS Packages for Operating the Qualcomm RB5 Drone
 
+# This project was worked in a collaboration with the university of ottawa
 ## Is This Repository Right for You?
 
 This repository is ideal if you’re looking to:
