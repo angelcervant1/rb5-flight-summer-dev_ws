@@ -1,9 +1,8 @@
 # ROS Packages for Operating the Qualcomm RB5 Drone
 
 # This project was worked in a collaboration with the university of ottawa
-## Is This Repository Right for You?
 
-Developed a comprehensive ROS-based workspace tailored for the Qualcomm RB5 drone platform, focusing on visual servoing and autonomous navigation. This project encompasses four key ROS packages:
+I directed the development a comprehensive ROS-based workspace tailored for the Qualcomm RB5 drone platform, focusing on visual servoing and autonomous navigation. This project encompasses four key ROS packages:
 
 
 ## Overview
@@ -31,7 +30,6 @@ This ROS environment has been tested and optimized for ROS Melodic on Ubuntu 18.
 ## Configuration
 
 
-### MAVROS Setup
 
 
 ### OptiTrack Setup
